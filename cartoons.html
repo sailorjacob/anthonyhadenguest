@@ -16,7 +16,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cartoons-styles.css">
 </head>
 <body>
@@ -25,121 +25,129 @@
         <div class="nav-container">
             <div class="nav-brand">
                 <h1>Anthony Haden-Guest</h1>
-                <span>Cartoon Gallery</span>
+                <span>Gallery</span>
             </div>
             <div class="nav-links">
-                <a href="index.html" class="nav-link">← Back to Main Site</a>
+                <a href="index.html" class="nav-link">← Return</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Satirical Cartoons</h1>
-            <p class="hero-subtitle">Visual Commentary by Anthony Haden-Guest</p>
-        </div>
-    </section>
-
-    <!-- Smile Wars Gallery -->
-    <section class="gallery-section">
-        <div class="section-header">
-            <h2>Smile Wars</h2>
-        </div>
+    <!-- Main Gallery Container -->
+    <main class="main-gallery" id="gallery-view">
         
-        <div class="carousel-container">
-            <div class="carousel-track" id="smile-wars-track">
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu" alt="Smile Wars cartoon" loading="lazy">
+        <!-- Smile Wars Collection -->
+        <section class="collection-section" data-collection="smile-wars">
+            <div class="collection-header">
+                <h2>Smile Wars</h2>
+                <span class="collection-count">7 artworks</span>
+            </div>
+            
+            <div class="camera-roll" id="smile-wars-roll">
+                <div class="artwork-thumb" data-index="0">
+                    <img src="https://drive.google.com/thumbnail?id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b" alt="Smile Wars cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="1">
+                    <img src="https://drive.google.com/thumbnail?id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV" alt="Smile Wars cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="2">
+                    <img src="https://drive.google.com/thumbnail?id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86" alt="Smile Wars cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="3">
+                    <img src="https://drive.google.com/thumbnail?id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ" alt="Smile Wars cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="4">
+                    <img src="https://drive.google.com/thumbnail?id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-" alt="Smile Wars cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="5">
+                    <img src="https://drive.google.com/thumbnail?id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe" alt="Smile Wars cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="6">
+                    <img src="https://drive.google.com/thumbnail?id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
             </div>
-            <button class="carousel-btn prev-btn" data-carousel="smile-wars-track">‹</button>
-            <button class="carousel-btn next-btn" data-carousel="smile-wars-track">›</button>
-            <div class="carousel-dots" id="smile-wars-dots"></div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Things Next Gallery -->
-    <section class="gallery-section">
-        <div class="section-header">
-            <h2>Things Next</h2>
-        </div>
-        
-        <div class="carousel-container">
-            <div class="carousel-track" id="things-next-track">
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1A7QXz0vClnkrnofbuxVRtDqeDls8rcKc" alt="Things Next cartoon" loading="lazy">
+        <!-- Things Next Collection -->
+        <section class="collection-section" data-collection="things-next">
+            <div class="collection-header">
+                <h2>Things Next</h2>
+                <span class="collection-count">13 artworks</span>
+            </div>
+            
+            <div class="camera-roll" id="things-next-roll">
+                <div class="artwork-thumb" data-index="0">
+                    <img src="https://drive.google.com/thumbnail?id=1A7QXz0vClnkrnofbuxVRtDqeDls8rcKc&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1BYku9SYIAPNbaBWPuVzTDhdR_0C4VJwp" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="1">
+                    <img src="https://drive.google.com/thumbnail?id=1E9M_YCUHsW1-SurimINJnMrC1ZahozPn&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1E9M_YCUHsW1-SurimINJnMrC1ZahozPn" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="2">
+                    <img src="https://drive.google.com/thumbnail?id=1F7H7caYwGZkp8EE4DK-aO9diwIvg0Oii&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1F7H7caYwGZkp8EE4DK-aO9diwIvg0Oii" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="3">
+                    <img src="https://drive.google.com/thumbnail?id=1HkSM-aVwpBUz4KVRDX__XSNIBMHQe7xI&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1HkSM-aVwpBUz4KVRDX__XSNIBMHQe7xI" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="4">
+                    <img src="https://drive.google.com/thumbnail?id=1RMcuXx5w-I_5WqgdI8Y3urA531XB8Sn-&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1RMcuXx5w-I_5WqgdI8Y3urA531XB8Sn-" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="5">
+                    <img src="https://drive.google.com/thumbnail?id=1UoxtKGQKvk5bFF4qyYiROtwhSRh7iFh1&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1UoxtKGQKvk5bFF4qyYiROtwhSRh7iFh1" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="6">
+                    <img src="https://drive.google.com/thumbnail?id=1ViPloe6k_qM8WgbNe2_9wFmXwwXmONh8&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1ViPloe6k_qM8WgbNe2_9wFmXwXmONh8" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="7">
+                    <img src="https://drive.google.com/thumbnail?id=1WwC53TAn82qB6Rv-acRJBfT_D1aTB25r&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1WwC53TAn82qB6Rv-acRJBfT_D1aTB25r" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="8">
+                    <img src="https://drive.google.com/thumbnail?id=1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="9">
+                    <img src="https://drive.google.com/thumbnail?id=1fH3GrsjEWQf47cH79ND4CDniMVzTa-Wr&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1fH3GrsjEWQf47cH79ND4CDniMVzTa-Wr" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="10">
+                    <img src="https://drive.google.com/thumbnail?id=1i7uU-qR3ciIqABIVxhK-sm9DLBMXxjmP&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1i7uU-qR3ciIqABIVxhK-sm9DLBMXxjmP" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="11">
+                    <img src="https://drive.google.com/thumbnail?id=1nReW3MK6B7M2ZuKcebvNSz3JlUu_Kl1z&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1nReW3MK6B7M2ZuKcebvNSz3JlUu_Kl1z" alt="Things Next cartoon" loading="lazy">
-                </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1o1kWyHFI_c7FmqoaNqM5p5HUiR4TmIoH" alt="Things Next cartoon" loading="lazy">
-                </div>
-                <div class="cartoon-slide">
-                    <img src="https://drive.google.com/uc?export=view&id=1tMMHlBCn6ZX0DvkPL2dXvaIRQO4j1ikM" alt="Things Next cartoon" loading="lazy">
+                <div class="artwork-thumb" data-index="12">
+                    <img src="https://drive.google.com/thumbnail?id=1tMMHlBCn6ZX0DvkPL2dXvaIRQO4j1ikM&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
             </div>
-            <button class="carousel-btn prev-btn" data-carousel="things-next-track">‹</button>
-            <button class="carousel-btn next-btn" data-carousel="things-next-track">›</button>
-            <div class="carousel-dots" id="things-next-dots"></div>
+        </section>
+
+    </main>
+
+    <!-- Full Page Image Viewer -->
+    <div class="image-viewer" id="image-viewer">
+        <div class="viewer-header">
+            <button class="back-btn" id="back-btn" aria-label="Back to gallery">
+                <span>← Back to Gallery</span>
+            </button>
+            <div class="viewer-info">
+                <span class="viewer-title" id="viewer-title"></span>
+                <span class="viewer-counter" id="viewer-counter"></span>
+            </div>
         </div>
-    </section>
+        
+        <div class="viewer-content">
+            <div class="image-container">
+                <img id="viewer-image" src="" alt="">
+            </div>
+            
+            <div class="viewer-nav">
+                <button class="viewer-btn prev-btn" id="prev-btn" aria-label="Previous artwork">‹</button>
+                <button class="viewer-btn next-btn" id="next-btn" aria-label="Next artwork">›</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
+            <div class="footer-divider"></div>
             <p>&copy; 2025 Anthony Haden-Guest. All rights reserved.</p>
             <a href="index.html" class="footer-link">Return to Main Site</a>
         </div>

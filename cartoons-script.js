@@ -1,213 +1,265 @@
-// Gallery data
+// Gallery data with corrected image URLs
 const galleryData = {
     'smile-wars': [
-        {
-            id: 1,
-            title: 'Smile Wars #1',
-            description: 'Social Commentary',
-            src: 'https://drive.google.com/uc?export=view&id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu',
-            series: 'smile-wars'
-        },
-        {
-            id: 2,
-            title: 'Smile Wars #2',
-            description: 'Cultural Observation',
-            src: 'https://drive.google.com/uc?export=view&id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b',
-            series: 'smile-wars'
-        },
-        {
-            id: 3,
-            title: 'Smile Wars #3',
-            description: 'Social Dynamics',
-            src: 'https://drive.google.com/uc?export=view&id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV',
-            series: 'smile-wars'
-        },
-        {
-            id: 4,
-            title: 'Smile Wars #4',
-            description: 'Contemporary Critique',
-            src: 'https://drive.google.com/uc?export=view&id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86',
-            series: 'smile-wars'
-        },
-        {
-            id: 5,
-            title: 'Smile Wars #5',
-            description: 'Visual Commentary',
-            src: 'https://drive.google.com/uc?export=view&id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ',
-            series: 'smile-wars'
-        },
-        {
-            id: 6,
-            title: 'Smile Wars #6',
-            description: 'Satirical Insight',
-            src: 'https://drive.google.com/uc?export=view&id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-',
-            series: 'smile-wars'
-        },
-        {
-            id: 7,
-            title: 'Smile Wars #7',
-            description: 'Social Observation',
-            src: 'https://drive.google.com/uc?export=view&id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe',
-            series: 'smile-wars'
-        }
+        { id: '15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu', title: 'Smile Wars #1' },
+        { id: '1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b', title: 'Smile Wars #2' },
+        { id: '1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV', title: 'Smile Wars #3' },
+        { id: '1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86', title: 'Smile Wars #4' },
+        { id: '1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ', title: 'Smile Wars #5' },
+        { id: '1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-', title: 'Smile Wars #6' },
+        { id: '1upzI1GpCAOltJROvnje_7j0h0M8hbCUe', title: 'Smile Wars #7' }
     ],
     'things-next': [
-        {
-            id: 8,
-            title: 'Things Next #1',
-            description: 'Future Dynamics',
-            src: 'https://drive.google.com/uc?export=view&id=1A7QXz0vClnkrnofbuxVRtDqeDls8rcKc',
-            series: 'things-next'
-        },
-        {
-            id: 9,
-            title: 'Things Next #2',
-            description: 'Cultural Evolution',
-            src: 'https://drive.google.com/uc?export=view&id=1BYku9SYIAPNbaBWPuVzTDhdR_0C4VJwp',
-            series: 'things-next'
-        },
-        {
-            id: 10,
-            title: 'Things Next #3',
-            description: 'Social Prediction',
-            src: 'https://drive.google.com/uc?export=view&id=1E9M_YCUHsW1-SurimINJnMrC1ZahozPn',
-            series: 'things-next'
-        },
-        {
-            id: 11,
-            title: 'Things Next #4',
-            description: 'Future Commentary',
-            src: 'https://drive.google.com/uc?export=view&id=1F7H7caYwGZkp8EE4DK-aO9diwIvg0Oii',
-            series: 'things-next'
-        },
-        {
-            id: 12,
-            title: 'Things Next #5',
-            description: 'Emerging Trends',
-            src: 'https://drive.google.com/uc?export=view&id=1HkSM-aVwpBUz4KVRDX__XSNIBMHQe7xI',
-            series: 'things-next'
-        },
-        {
-            id: 13,
-            title: 'Things Next #6',
-            description: 'Progressive Insight',
-            src: 'https://drive.google.com/uc?export=view&id=1RMcuXx5w-I_5WqgdI8Y3urA531XB8Sn-',
-            series: 'things-next'
-        },
-        {
-            id: 14,
-            title: 'Things Next #7',
-            description: 'Tomorrow\'s Satire',
-            src: 'https://drive.google.com/uc?export=view&id=1UoxtKGQKvk5bFF4qyYiROtwhSRh7iFh1',
-            series: 'things-next'
-        },
-        {
-            id: 15,
-            title: 'Things Next #8',
-            description: 'Future Vision',
-            src: 'https://drive.google.com/uc?export=view&id=1ViPloe6k_qM8WgbNe2_9wFmXwXmONh8',
-            series: 'things-next'
-        },
-        {
-            id: 16,
-            title: 'Things Next #9',
-            description: 'Cultural Forecast',
-            src: 'https://drive.google.com/uc?export=view&id=1WwC53TAn82qB6Rv-acRJBfT_D1aTB25r',
-            series: 'things-next'
-        },
-        {
-            id: 17,
-            title: 'Things Next #10',
-            description: 'Next Generation',
-            src: 'https://drive.google.com/uc?export=view&id=1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5',
-            series: 'things-next'
-        },
-        {
-            id: 18,
-            title: 'Things Next #11',
-            description: 'Forward Thinking',
-            src: 'https://drive.google.com/uc?export=view&id=1fH3GrsjEWQf47cH79ND4CDniMVzTa-Wr',
-            series: 'things-next'
-        },
-        {
-            id: 19,
-            title: 'Things Next #12',
-            description: 'Future Perspective',
-            src: 'https://drive.google.com/uc?export=view&id=1i7uU-qR3ciIqABIVxhK-sm9DLBMXxjmP',
-            series: 'things-next'
-        },
-        {
-            id: 20,
-            title: 'Things Next #13',
-            description: 'Anticipatory Art',
-            src: 'https://drive.google.com/uc?export=view&id=1nReW3MK6B7M2ZuKcebvNSz3JlUu_Kl1z',
-            series: 'things-next'
-        },
-        {
-            id: 21,
-            title: 'Things Next #14',
-            description: 'Future Narrative',
-            src: 'https://drive.google.com/uc?export=view&id=1o1kWyHFI_c7FmqoaNqM5p5HUiR4TmIoH',
-            series: 'things-next'
-        },
-        {
-            id: 22,
-            title: 'Things Next #15',
-            description: 'Tomorrow\'s Truth',
-            src: 'https://drive.google.com/uc?export=view&id=1tMMHlBCn6ZX0DvkPL2dXvaIRQO4j1ikM',
-            series: 'things-next'
-        }
+        { id: '1A7QXz0vClnkrnofbuxVRtDqeDls8rcKc', title: 'Things #1' },
+        { id: '1E9M_YCUHsW1-SurimINJnMrC1ZahozPn', title: 'Things #2' },
+        { id: '1F7H7caYwGZkp8EE4DK-aO9diwIvg0Oii', title: 'Things #3' },
+        { id: '1HkSM-aVwpBUz4KVRDX__XSNIBMHQe7xI', title: 'Things #4' },
+        { id: '1RMcuXx5w-I_5WqgdI8Y3urA531XB8Sn-', title: 'Things #5' },
+        { id: '1UoxtKGQKvk5bFF4qyYiROtwhSRh7iFh1', title: 'Things #6' },
+        { id: '1ViPloe6k_qM8WgbNe2_9wFmXwwXmONh8', title: 'Things #7' },
+        { id: '1WwC53TAn82qB6Rv-acRJBfT_D1aTB25r', title: 'Things #8' },
+        { id: '1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5', title: 'Things #9' },
+        { id: '1fH3GrsjEWQf47cH79ND4CDniMVzTa-Wr', title: 'Things #10' },
+        { id: '1i7uU-qR3ciIqABIVxhK-sm9DLBMXxjmP', title: 'Things #11' },
+        { id: '1nReW3MK6B7M2ZuKcebvNSz3JlUu_Kl1z', title: 'Things #12' },
+        { id: '1tMMHlBCn6ZX0DvkPL2dXvaIRQO4j1ikM', title: 'Things #13' }
     ]
 };
 
-// Flatten all gallery data for easier access
-const allImages = [...galleryData['smile-wars'], ...galleryData['things-next']];
-
 // DOM Elements
-const tabBtns = document.querySelectorAll('.tab-btn');
-const gallerySections = document.querySelectorAll('.gallery-section');
+const galleryView = document.getElementById('gallery-view');
+const imageViewer = document.getElementById('image-viewer');
+const viewerImage = document.getElementById('viewer-image');
+const viewerTitle = document.getElementById('viewer-title');
+const viewerCounter = document.getElementById('viewer-counter');
+const backBtn = document.getElementById('back-btn');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const navbar = document.querySelector('.navbar');
+const footer = document.querySelector('.footer');
+
+// State
+let currentCollection = '';
+let currentIndex = 0;
+let currentImages = [];
+let isViewingImage = false;
 
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize both carousels
-    const smileWarsCarousel = new Carousel('smile-wars-track', 'smile-wars-dots');
-    const thingsNextCarousel = new Carousel('things-next-track', 'things-next-dots');
-    
-    // Setup other functionality
+    setupGallery();
+    setupImageViewer();
+    setupScrollAnimations();
     setupNavbarScroll();
     setupImageLoading();
-    setupScrollAnimations();
 });
 
-// Setup tab navigation
-function setupTabNavigation() {
-    tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetSeries = btn.getAttribute('data-series');
-            switchToSeries(targetSeries);
-            setActiveTab(btn);
+// Setup gallery click handlers
+function setupGallery() {
+    document.querySelectorAll('.artwork-thumb').forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            const collection = thumb.closest('.collection-section').getAttribute('data-collection');
+            const index = parseInt(thumb.getAttribute('data-index'));
+            openImageViewer(collection, index);
+        });
+        
+        // Keyboard support
+        thumb.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                thumb.click();
+            }
         });
     });
 }
 
-// Switch to specific series
-function switchToSeries(seriesName) {
-    gallerySections.forEach(section => {
-        if (section.id === seriesName) {
-            section.classList.add('active');
-        } else {
-            section.classList.remove('active');
-        }
+// Setup image viewer functionality
+function setupImageViewer() {
+    backBtn.addEventListener('click', closeImageViewer);
+    prevBtn.addEventListener('click', () => navigateImage(-1));
+    nextBtn.addEventListener('click', () => navigateImage(1));
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', handleKeyboard);
+    
+    // Touch/swipe support
+    setupSwipeSupport();
+}
+
+// Open image viewer (full page transformation)
+function openImageViewer(collection, index) {
+    currentCollection = collection;
+    currentIndex = index;
+    currentImages = galleryData[collection];
+    isViewingImage = true;
+    
+    // Add body class for styling
+    document.body.classList.add('viewing-image');
+    
+    // Hide gallery and footer with animation
+    galleryView.classList.add('hidden');
+    footer.classList.add('hidden');
+    
+    // Show image viewer
+    setTimeout(() => {
+        imageViewer.classList.add('active');
+        updateViewerImage();
+    }, 200);
+    
+    // Track interaction
+    trackImageView(collection, index);
+}
+
+// Close image viewer (return to gallery)
+function closeImageViewer() {
+    isViewingImage = false;
+    
+    // Remove body class
+    document.body.classList.remove('viewing-image');
+    
+    // Hide image viewer
+    imageViewer.classList.remove('active');
+    
+    // Show gallery and footer
+    setTimeout(() => {
+        galleryView.classList.remove('hidden');
+        footer.classList.remove('hidden');
+    }, 200);
+}
+
+// Navigate between images
+function navigateImage(direction) {
+    currentIndex += direction;
+    
+    if (currentIndex >= currentImages.length) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = currentImages.length - 1;
+    }
+    
+    updateViewerImage();
+}
+
+// Update viewer image with smooth transition
+function updateViewerImage() {
+    const imageData = currentImages[currentIndex];
+    const imageUrl = `https://drive.google.com/thumbnail?id=${imageData.id}&sz=w1200`;
+    
+    // Fade out current image
+    viewerImage.style.opacity = '0';
+    
+    setTimeout(() => {
+        viewerImage.src = imageUrl;
+        viewerImage.alt = imageData.title;
+        
+        // Update title and counter
+        viewerTitle.textContent = imageData.title;
+        viewerCounter.textContent = `${currentIndex + 1} of ${currentImages.length}`;
+        
+        // Fade in new image when loaded
+        viewerImage.onload = () => {
+            viewerImage.style.opacity = '1';
+        };
+        
+        // Handle load error
+        viewerImage.onerror = () => {
+            viewerImage.style.opacity = '1';
+            console.warn('Failed to load image:', imageUrl);
+        };
+    }, 150);
+}
+
+// Handle keyboard navigation
+function handleKeyboard(e) {
+    if (!isViewingImage) return;
+    
+    switch(e.key) {
+        case 'Escape':
+            closeImageViewer();
+            break;
+        case 'ArrowLeft':
+            e.preventDefault();
+            navigateImage(-1);
+            break;
+        case 'ArrowRight':
+            e.preventDefault();
+            navigateImage(1);
+            break;
+        case ' ':
+            e.preventDefault();
+            navigateImage(1);
+            break;
+    }
+}
+
+// Setup swipe support for touch devices
+function setupSwipeSupport() {
+    let startX = 0;
+    let endX = 0;
+    let startY = 0;
+    let endY = 0;
+    let isDragging = false;
+    
+    // Touch events
+    imageViewer.addEventListener('touchstart', (e) => {
+        if (!isViewingImage) return;
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        isDragging = true;
+    });
+    
+    imageViewer.addEventListener('touchmove', (e) => {
+        if (!isDragging || !isViewingImage) return;
+        e.preventDefault();
+    });
+    
+    imageViewer.addEventListener('touchend', (e) => {
+        if (!isDragging || !isViewingImage) return;
+        endX = e.changedTouches[0].clientX;
+        endY = e.changedTouches[0].clientY;
+        handleSwipe(startX, endX, startY, endY);
+        isDragging = false;
+    });
+    
+    // Mouse drag support for desktop
+    imageViewer.addEventListener('mousedown', (e) => {
+        if (!isViewingImage || e.target !== viewerImage) return;
+        startX = e.clientX;
+        startY = e.clientY;
+        isDragging = true;
+        e.preventDefault();
+    });
+    
+    imageViewer.addEventListener('mousemove', (e) => {
+        if (!isDragging || !isViewingImage) return;
+        e.preventDefault();
+    });
+    
+    imageViewer.addEventListener('mouseup', (e) => {
+        if (!isDragging || !isViewingImage) return;
+        endX = e.clientX;
+        endY = e.clientY;
+        handleSwipe(startX, endX, startY, endY);
+        isDragging = false;
     });
 }
 
-// Set active tab
-function setActiveTab(activeBtn) {
-    tabBtns.forEach(btn => btn.classList.remove('active'));
-    activeBtn.classList.add('active');
+// Handle swipe gestures
+function handleSwipe(startX, endX, startY, endY) {
+    const threshold = 50;
+    const diffX = startX - endX;
+    const diffY = startY - endY;
+    
+    // Only handle horizontal swipes (ignore vertical)
+    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > threshold) {
+        if (diffX > 0) {
+            navigateImage(1); // Swipe left - next image
+        } else {
+            navigateImage(-1); // Swipe right - previous image
+        }
+    }
 }
 
-// Setup scroll animations
+// Scroll animations for gallery view
 function setupScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
@@ -217,17 +269,13 @@ function setupScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('visible');
             }
         });
     }, observerOptions);
 
-    // Observe gallery sections for scroll animations
-    document.querySelectorAll('.gallery-section').forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(30px)';
-        section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    // Observe collection sections
+    document.querySelectorAll('.collection-section').forEach(section => {
         observer.observe(section);
     });
 }
@@ -235,24 +283,172 @@ function setupScrollAnimations() {
 // Navbar scroll effect
 function setupNavbarScroll() {
     window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
+        if (isViewingImage) return;
+        
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.99)';
+            navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
         } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
             navbar.style.boxShadow = 'none';
         }
     });
 }
 
-// Smooth scroll for anchor links
+// Image loading with error handling
+function setupImageLoading() {
+    const images = document.querySelectorAll('.artwork-thumb img');
+    
+    images.forEach(img => {
+        img.addEventListener('load', function() {
+            this.style.opacity = '1';
+            this.closest('.artwork-thumb').classList.remove('loading');
+        });
+        
+        img.addEventListener('error', function() {
+            const thumb = this.closest('.artwork-thumb');
+            thumb.innerHTML = `
+                <div style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    background: var(--gallery-bg);
+                    color: var(--text-light);
+                    font-style: italic;
+                    text-align: center;
+                    padding: 2rem;
+                    font-weight: 300;
+                    letter-spacing: 0.02em;
+                ">
+                    <p>Image unavailable</p>
+                </div>
+            `;
+        });
+        
+        // Set initial loading state
+        img.style.opacity = '0';
+        img.closest('.artwork-thumb').classList.add('loading');
+    });
+}
+
+// Preload images for better performance
+function preloadImages() {
+    Object.values(galleryData).flat().forEach(item => {
+        const img = new Image();
+        img.src = `https://drive.google.com/thumbnail?id=${item.id}&sz=w1200`;
+    });
+}
+
+// Initialize preloading after a short delay
+setTimeout(preloadImages, 2000);
+
+// Analytics tracking
+function trackImageView(collection, index) {
+    console.log(`Image viewed: ${collection} #${index + 1}`, {
+        collection,
+        index,
+        artwork: currentImages[index]?.title
+    });
+}
+
+// Accessibility improvements
+function setupAccessibility() {
+    // Add ARIA labels and keyboard support
+    document.querySelectorAll('.artwork-thumb').forEach((thumb, index) => {
+        thumb.setAttribute('role', 'button');
+        thumb.setAttribute('tabindex', '0');
+        thumb.setAttribute('aria-label', `View artwork ${index + 1}`);
+    });
+    
+    // Image viewer accessibility
+    imageViewer.setAttribute('role', 'dialog');
+    imageViewer.setAttribute('aria-modal', 'true');
+    imageViewer.setAttribute('aria-label', 'Full screen artwork viewer');
+}
+
+// Focus management
+function setupFocusManagement() {
+    let lastFocusedElement;
+    
+    // Store focus when opening viewer
+    const originalOpenViewer = openImageViewer;
+    window.openImageViewer = function(collection, index) {
+        lastFocusedElement = document.activeElement;
+        originalOpenViewer(collection, index);
+        
+        // Focus back button when viewer opens
+        setTimeout(() => {
+            backBtn.focus();
+        }, 300);
+    };
+    
+    // Restore focus when closing viewer
+    const originalCloseViewer = closeImageViewer;
+    window.closeImageViewer = function() {
+        originalCloseViewer();
+        
+        // Return focus to the last focused element
+        if (lastFocusedElement) {
+            setTimeout(() => {
+                lastFocusedElement.focus();
+            }, 300);
+        }
+    };
+}
+
+// Initialize accessibility and focus management
+setupAccessibility();
+setupFocusManagement();
+
+// Handle browser back button
+window.addEventListener('popstate', (e) => {
+    if (isViewingImage) {
+        closeImageViewer();
+    }
+});
+
+// Add history state when opening viewer
+function addHistoryState() {
+    if (isViewingImage) {
+        history.pushState({ viewing: true }, '', window.location.href);
+    }
+}
+
+// Enhanced error handling
+window.addEventListener('error', (e) => {
+    if (e.target.tagName === 'IMG') {
+        console.warn('Image failed to load:', e.target.src);
+    }
+});
+
+// Prevent context menu on images
+document.addEventListener('contextmenu', (e) => {
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+});
+
+// Handle window resize
+window.addEventListener('resize', () => {
+    if (isViewingImage) {
+        // Ensure image is properly sized after resize
+        setTimeout(() => {
+            viewerImage.style.maxWidth = '100%';
+            viewerImage.style.maxHeight = '100%';
+        }, 100);
+    }
+});
+
+// Smooth scroll for anchor links (gallery view only)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        if (isViewingImage) return;
+        
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const headerHeight = document.querySelector('.navbar').offsetHeight;
+            const headerHeight = navbar.offsetHeight;
             const targetPosition = target.offsetTop - headerHeight - 20;
             
             window.scrollTo({
@@ -263,88 +459,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Enhanced iframe loading
-function setupIframeLoading() {
-    const iframes = document.querySelectorAll('.cartoon-frame iframe');
-    
-    iframes.forEach(iframe => {
-        iframe.addEventListener('load', function() {
-            this.style.opacity = '1';
-            this.style.transition = 'opacity 0.3s ease';
-        });
-        
-        // Set initial opacity
-        iframe.style.opacity = '0';
-    });
-}
-
-// Initialize iframe loading
-setupIframeLoading();
-
-// Error handling for iframes
-document.querySelectorAll('.cartoon-frame iframe').forEach(iframe => {
-    iframe.addEventListener('error', function() {
-        const parent = this.closest('.cartoon-frame');
-        if (parent) {
-            parent.innerHTML = `
-                <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    background: #f8f9fa;
-                    color: #6b7280;
-                    font-style: italic;
-                    text-align: center;
-                    padding: 2rem;
-                ">
-                    <p>Cartoon temporarily unavailable</p>
-                </div>
-            `;
-        }
-    });
-});
-
-// Keyboard navigation
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-        const currentActiveTab = document.querySelector('.tab-btn.active');
-        const allTabs = Array.from(tabBtns);
-        const currentIndex = allTabs.indexOf(currentActiveTab);
-        
-        let nextIndex;
-        if (e.key === 'ArrowLeft') {
-            nextIndex = currentIndex > 0 ? currentIndex - 1 : allTabs.length - 1;
-        } else {
-            nextIndex = currentIndex < allTabs.length - 1 ? currentIndex + 1 : 0;
-        }
-        
-        allTabs[nextIndex].click();
-    }
-});
-
-// Analytics tracking (placeholder)
-function trackGalleryInteraction(action, data) {
-    console.log(`Gallery interaction: ${action}`, data);
-}
-
-// Track tab switches
-const originalSwitchToSeries = switchToSeries;
-switchToSeries = function(seriesName) {
-    trackGalleryInteraction('tab_switch', { series: seriesName });
-    return originalSwitchToSeries.call(this, seriesName);
-};
-
-// Performance optimization: Lazy load iframes
-function setupLazyLoading() {
-    const iframeObserver = new IntersectionObserver((entries) => {
+// Performance optimization with Intersection Observer
+function optimizePerformance() {
+    const imageObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const iframe = entry.target;
-                if (iframe.dataset.src) {
-                    iframe.src = iframe.dataset.src;
-                    iframe.removeAttribute('data-src');
-                    iframeObserver.unobserve(iframe);
+                const img = entry.target;
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                    imageObserver.unobserve(img);
                 }
             }
         });
@@ -352,295 +476,24 @@ function setupLazyLoading() {
         rootMargin: '50px'
     });
 
-    // For future implementation of lazy loading
-    document.querySelectorAll('iframe[data-src]').forEach(iframe => {
-        iframeObserver.observe(iframe);
+    // Observe images for lazy loading
+    document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
     });
-}
-
-// Initialize lazy loading
-setupLazyLoading();
-
-// Responsive behavior
-function handleResize() {
-    // Adjust iframe heights on mobile if needed
-    if (window.innerWidth <= 480) {
-        document.querySelectorAll('.cartoon-frame').forEach(frame => {
-            frame.style.height = '250px';
-        });
-    } else {
-        document.querySelectorAll('.cartoon-frame').forEach(frame => {
-            frame.style.height = '300px';
-        });
-    }
-}
-
-window.addEventListener('resize', handleResize);
-handleResize(); // Initial call 
-
-// Carousel functionality
-class Carousel {
-    constructor(trackId, dotsId) {
-        this.track = document.getElementById(trackId);
-        this.dotsContainer = document.getElementById(dotsId);
-        this.slides = this.track.querySelectorAll('.cartoon-slide');
-        this.prevBtn = document.querySelector(`[data-carousel="${trackId}"].prev-btn`);
-        this.nextBtn = document.querySelector(`[data-carousel="${trackId}"].next-btn`);
-        
-        this.currentIndex = 0;
-        this.totalSlides = this.slides.length;
-        
-        this.init();
-    }
-    
-    init() {
-        this.createDots();
-        this.setupEventListeners();
-        this.updateCarousel();
-        this.setupSwipeSupport();
-    }
-    
-    createDots() {
-        this.dotsContainer.innerHTML = '';
-        for (let i = 0; i < this.totalSlides; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('dot');
-            if (i === 0) dot.classList.add('active');
-            dot.addEventListener('click', () => this.goToSlide(i));
-            this.dotsContainer.appendChild(dot);
-        }
-        this.dots = this.dotsContainer.querySelectorAll('.dot');
-    }
-    
-    setupEventListeners() {
-        this.prevBtn.addEventListener('click', () => this.prevSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
-        
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (this.isInView()) {
-                if (e.key === 'ArrowLeft') this.prevSlide();
-                if (e.key === 'ArrowRight') this.nextSlide();
-            }
-        });
-    }
-    
-    setupSwipeSupport() {
-        let startX = 0;
-        let endX = 0;
-        let isDragging = false;
-        
-        this.track.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-        });
-        
-        this.track.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
-        });
-        
-        this.track.addEventListener('touchend', (e) => {
-            if (!isDragging) return;
-            endX = e.changedTouches[0].clientX;
-            this.handleSwipe(startX, endX);
-            isDragging = false;
-        });
-        
-        // Mouse drag support for desktop
-        this.track.addEventListener('mousedown', (e) => {
-            startX = e.clientX;
-            isDragging = true;
-            this.track.style.cursor = 'grabbing';
-        });
-        
-        this.track.addEventListener('mousemove', (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
-        });
-        
-        this.track.addEventListener('mouseup', (e) => {
-            if (!isDragging) return;
-            endX = e.clientX;
-            this.handleSwipe(startX, endX);
-            isDragging = false;
-            this.track.style.cursor = 'grab';
-        });
-        
-        this.track.addEventListener('mouseleave', () => {
-            if (isDragging) {
-                isDragging = false;
-                this.track.style.cursor = 'grab';
-            }
-        });
-    }
-    
-    handleSwipe(startX, endX) {
-        const threshold = 50;
-        const diff = startX - endX;
-        
-        if (Math.abs(diff) > threshold) {
-            if (diff > 0) {
-                this.nextSlide();
-            } else {
-                this.prevSlide();
-            }
-        }
-    }
-    
-    isInView() {
-        const rect = this.track.getBoundingClientRect();
-        return rect.top < window.innerHeight && rect.bottom > 0;
-    }
-    
-    goToSlide(index) {
-        this.currentIndex = index;
-        this.updateCarousel();
-    }
-    
-    nextSlide() {
-        this.currentIndex = (this.currentIndex + 1) % this.totalSlides;
-        this.updateCarousel();
-    }
-    
-    prevSlide() {
-        this.currentIndex = (this.currentIndex - 1 + this.totalSlides) % this.totalSlides;
-        this.updateCarousel();
-    }
-    
-    updateCarousel() {
-        const translateX = -this.currentIndex * 100;
-        this.track.style.transform = `translateX(${translateX}%)`;
-        
-        // Update dots
-        this.dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === this.currentIndex);
-        });
-        
-        // Update button states
-        this.updateButtonStates();
-    }
-    
-    updateButtonStates() {
-        // Always enable buttons for infinite loop
-        this.prevBtn.disabled = false;
-        this.nextBtn.disabled = false;
-    }
-}
-
-// Auto-play functionality (optional)
-function setupAutoPlay(carousel, interval = 5000) {
-    let autoPlayTimer;
-    
-    function startAutoPlay() {
-        autoPlayTimer = setInterval(() => {
-            carousel.nextSlide();
-        }, interval);
-    }
-    
-    function stopAutoPlay() {
-        clearInterval(autoPlayTimer);
-    }
-    
-    // Start auto-play
-    startAutoPlay();
-    
-    // Pause on hover
-    carousel.track.addEventListener('mouseenter', stopAutoPlay);
-    carousel.track.addEventListener('mouseleave', startAutoPlay);
-    
-    // Pause on touch
-    carousel.track.addEventListener('touchstart', stopAutoPlay);
-    carousel.track.addEventListener('touchend', () => {
-        setTimeout(startAutoPlay, 3000); // Resume after 3 seconds
-    });
-    
-    // Pause when not in view
-    const pauseObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                startAutoPlay();
-            } else {
-                stopAutoPlay();
-            }
-        });
-    });
-    
-    pauseObserver.observe(carousel.track);
-}
-
-// Image loading with error handling
-function setupImageLoading() {
-    const images = document.querySelectorAll('.cartoon-slide img');
-    
-    images.forEach(img => {
-        img.addEventListener('load', function() {
-            this.style.opacity = '1';
-            this.closest('.cartoon-slide').classList.remove('loading');
-        });
-        
-        img.addEventListener('error', function() {
-            const slide = this.closest('.cartoon-slide');
-            slide.innerHTML = `
-                <div style="
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 100%;
-                    background: var(--secondary-color);
-                    color: var(--text-light);
-                    font-style: italic;
-                    text-align: center;
-                    padding: 2rem;
-                ">
-                    <p>Cartoon temporarily unavailable</p>
-                </div>
-            `;
-        });
-        
-        // Set initial loading state
-        img.style.opacity = '0';
-        img.closest('.cartoon-slide').classList.add('loading');
-    });
-}
-
-// Preload images for better performance
-function preloadImages() {
-    const images = document.querySelectorAll('.cartoon-slide img');
-    images.forEach(img => {
-        const imageObj = new Image();
-        imageObj.src = img.src;
-    });
-}
-
-// Initialize preloading after a short delay
-setTimeout(preloadImages, 1000);
-
-// Analytics tracking (placeholder)
-function trackCarouselInteraction(action, data) {
-    console.log(`Carousel interaction: ${action}`, data);
-}
-
-// Performance optimization
-function optimizePerformance() {
-    // Lazy load images that are not immediately visible
-    const lazyImages = document.querySelectorAll('.cartoon-slide img[loading="lazy"]');
-    
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    img.src = img.dataset.src || img.src;
-                    img.classList.remove('lazy');
-                    imageObserver.unobserve(img);
-                }
-            });
-        });
-
-        lazyImages.forEach(img => imageObserver.observe(img));
-    }
 }
 
 // Initialize performance optimizations
-optimizePerformance(); 
+optimizePerformance();
+
+// Debug helper
+window.galleryDebug = {
+    currentState: () => ({
+        isViewingImage,
+        currentCollection,
+        currentIndex,
+        currentImages: currentImages.length
+    }),
+    openViewer: openImageViewer,
+    closeViewer: closeImageViewer,
+    navigate: navigateImage
+}; 
