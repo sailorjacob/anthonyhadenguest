@@ -16,7 +16,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="cartoons-styles.css">
 </head>
 <body>
@@ -28,14 +28,7 @@
                 <span>Cartoon Gallery</span>
             </div>
             <div class="nav-links">
-                <a href="index.html" class="nav-link">Main Site</a>
-                <a href="#smile-wars" class="nav-link">Smile Wars</a>
-                <a href="#things-next" class="nav-link">Things Next</a>
-            </div>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <a href="index.html" class="nav-link">← Back to Main Site</a>
             </div>
         </div>
     </nav>
@@ -43,250 +36,106 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="title-main">Satirical Cartoons</span>
-                <span class="title-sub">by Anthony Haden-Guest</span>
-            </h1>
-            <p class="hero-description">
-                Explore two distinctive cartoon series that capture the wit and social observation 
-                of one of culture's most perceptive commentators.
-            </p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">7</span>
-                    <span class="stat-label">Smile Wars</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">15</span>
-                    <span class="stat-label">Things Next</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Filter -->
-    <section class="gallery-filter">
-        <div class="filter-container">
-            <button class="filter-btn active" data-filter="all">All Cartoons</button>
-            <button class="filter-btn" data-filter="smile-wars">Smile Wars</button>
-            <button class="filter-btn" data-filter="things-next">Things Next</button>
+            <h1 class="hero-title">Satirical Cartoons</h1>
+            <p class="hero-subtitle">Visual Commentary by Anthony Haden-Guest</p>
         </div>
     </section>
 
     <!-- Smile Wars Gallery -->
-    <section id="smile-wars" class="gallery-section">
+    <section class="gallery-section">
         <div class="section-header">
             <h2>Smile Wars</h2>
-            <p>A satirical exploration of contemporary social dynamics through forced happiness and social facades.</p>
         </div>
         
-        <div class="masonry-grid" data-series="smile-wars">
-            <div class="cartoon-item" data-id="1">
-                <img src="https://drive.google.com/uc?export=view&id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu" alt="Smile Wars #1" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Smile Wars #1</h3>
-                    <p>Social Commentary</p>
+        <div class="carousel-container">
+            <div class="carousel-track" id="smile-wars-track">
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu" alt="Smile Wars cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b" alt="Smile Wars cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV" alt="Smile Wars cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86" alt="Smile Wars cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ" alt="Smile Wars cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-" alt="Smile Wars cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe" alt="Smile Wars cartoon" loading="lazy">
                 </div>
             </div>
-
-            <div class="cartoon-item" data-id="2">
-                <img src="https://drive.google.com/uc?export=view&id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b" alt="Smile Wars #2" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Smile Wars #2</h3>
-                    <p>Cultural Observation</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="3">
-                <img src="https://drive.google.com/uc?export=view&id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV" alt="Smile Wars #3" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Smile Wars #3</h3>
-                    <p>Social Dynamics</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="4">
-                <img src="https://drive.google.com/uc?export=view&id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86" alt="Smile Wars #4" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Smile Wars #4</h3>
-                    <p>Contemporary Critique</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="5">
-                <img src="https://drive.google.com/uc?export=view&id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ" alt="Smile Wars #5" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Smile Wars #5</h3>
-                    <p>Visual Commentary</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="6">
-                <img src="https://drive.google.com/uc?export=view&id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-" alt="Smile Wars #6" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Smile Wars #6</h3>
-                    <p>Satirical Insight</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="7">
-                <img src="https://drive.google.com/uc?export=view&id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe" alt="Smile Wars #7" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Smile Wars #7</h3>
-                    <p>Social Observation</p>
-                </div>
-            </div>
+            <button class="carousel-btn prev-btn" data-carousel="smile-wars-track">‹</button>
+            <button class="carousel-btn next-btn" data-carousel="smile-wars-track">›</button>
+            <div class="carousel-dots" id="smile-wars-dots"></div>
         </div>
     </section>
 
     <!-- Things Next Gallery -->
-    <section id="things-next" class="gallery-section">
+    <section class="gallery-section">
         <div class="section-header">
             <h2>Things Next</h2>
-            <p>A forward-looking series exploring future social dynamics and emerging cultural phenomena.</p>
         </div>
         
-        <div class="masonry-grid" data-series="things-next">
-            <div class="cartoon-item" data-id="8">
-                <img src="https://drive.google.com/uc?export=view&id=1A7QXz0vClnkrnofbuxVRtDqeDls8rcKc" alt="Things Next #1" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #1</h3>
-                    <p>Future Dynamics</p>
+        <div class="carousel-container">
+            <div class="carousel-track" id="things-next-track">
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1A7QXz0vClnkrnofbuxVRtDqeDls8rcKc" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1BYku9SYIAPNbaBWPuVzTDhdR_0C4VJwp" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1E9M_YCUHsW1-SurimINJnMrC1ZahozPn" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1F7H7caYwGZkp8EE4DK-aO9diwIvg0Oii" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1HkSM-aVwpBUz4KVRDX__XSNIBMHQe7xI" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1RMcuXx5w-I_5WqgdI8Y3urA531XB8Sn-" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1UoxtKGQKvk5bFF4qyYiROtwhSRh7iFh1" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1ViPloe6k_qM8WgbNe2_9wFmXwXmONh8" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1WwC53TAn82qB6Rv-acRJBfT_D1aTB25r" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1fH3GrsjEWQf47cH79ND4CDniMVzTa-Wr" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1i7uU-qR3ciIqABIVxhK-sm9DLBMXxjmP" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1nReW3MK6B7M2ZuKcebvNSz3JlUu_Kl1z" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1o1kWyHFI_c7FmqoaNqM5p5HUiR4TmIoH" alt="Things Next cartoon" loading="lazy">
+                </div>
+                <div class="cartoon-slide">
+                    <img src="https://drive.google.com/uc?export=view&id=1tMMHlBCn6ZX0DvkPL2dXvaIRQO4j1ikM" alt="Things Next cartoon" loading="lazy">
                 </div>
             </div>
-
-            <div class="cartoon-item" data-id="9">
-                <img src="https://drive.google.com/uc?export=view&id=1BYku9SYIAPNbaBWPuVzTDhdR_0C4VJwp" alt="Things Next #2" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #2</h3>
-                    <p>Cultural Evolution</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="10">
-                <img src="https://drive.google.com/uc?export=view&id=1E9M_YCUHsW1-SurimINJnMrC1ZahozPn" alt="Things Next #3" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #3</h3>
-                    <p>Social Prediction</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="11">
-                <img src="https://drive.google.com/uc?export=view&id=1F7H7caYwGZkp8EE4DK-aO9diwIvg0Oii" alt="Things Next #4" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #4</h3>
-                    <p>Future Commentary</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="12">
-                <img src="https://drive.google.com/uc?export=view&id=1HkSM-aVwpBUz4KVRDX__XSNIBMHQe7xI" alt="Things Next #5" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #5</h3>
-                    <p>Emerging Trends</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="13">
-                <img src="https://drive.google.com/uc?export=view&id=1RMcuXx5w-I_5WqgdI8Y3urA531XB8Sn-" alt="Things Next #6" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #6</h3>
-                    <p>Progressive Insight</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="14">
-                <img src="https://drive.google.com/uc?export=view&id=1UoxtKGQKvk5bFF4qyYiROtwhSRh7iFh1" alt="Things Next #7" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #7</h3>
-                    <p>Tomorrow's Satire</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="15">
-                <img src="https://drive.google.com/uc?export=view&id=1ViPloe6k_qM8WgbNe2_9wFmXwXmONh8" alt="Things Next #8" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #8</h3>
-                    <p>Future Vision</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="16">
-                <img src="https://drive.google.com/uc?export=view&id=1WwC53TAn82qB6Rv-acRJBfT_D1aTB25r" alt="Things Next #9" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #9</h3>
-                    <p>Cultural Forecast</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="17">
-                <img src="https://drive.google.com/uc?export=view&id=1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5" alt="Things Next #10" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #10</h3>
-                    <p>Next Generation</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="18">
-                <img src="https://drive.google.com/uc?export=view&id=1fH3GrsjEWQf47cH79ND4CDniMVzTa-Wr" alt="Things Next #11" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #11</h3>
-                    <p>Forward Thinking</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="19">
-                <img src="https://drive.google.com/uc?export=view&id=1i7uU-qR3ciIqABIVxhK-sm9DLBMXxjmP" alt="Things Next #12" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #12</h3>
-                    <p>Future Perspective</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="20">
-                <img src="https://drive.google.com/uc?export=view&id=1nReW3MK6B7M2ZuKcebvNSz3JlUu_Kl1z" alt="Things Next #13" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #13</h3>
-                    <p>Anticipatory Art</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="21">
-                <img src="https://drive.google.com/uc?export=view&id=1o1kWyHFI_c7FmqoaNqM5p5HUiR4TmIoH" alt="Things Next #14" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #14</h3>
-                    <p>Future Narrative</p>
-                </div>
-            </div>
-
-            <div class="cartoon-item" data-id="22">
-                <img src="https://drive.google.com/uc?export=view&id=1tMMHlBCn6ZX0DvkPL2dXvaIRQO4j1ikM" alt="Things Next #15" loading="lazy">
-                <div class="item-overlay">
-                    <h3>Things Next #15</h3>
-                    <p>Tomorrow's Truth</p>
-                </div>
-            </div>
+            <button class="carousel-btn prev-btn" data-carousel="things-next-track">‹</button>
+            <button class="carousel-btn next-btn" data-carousel="things-next-track">›</button>
+            <div class="carousel-dots" id="things-next-dots"></div>
         </div>
     </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <div class="lightbox-backdrop"></div>
-        <div class="lightbox-content">
-            <button class="lightbox-close">&times;</button>
-            <div class="lightbox-image-container">
-                <img id="lightbox-image" src="" alt="">
-            </div>
-            <div class="lightbox-info">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-description"></p>
-            </div>
-            <div class="lightbox-nav">
-                <button class="nav-btn prev-btn">‹</button>
-                <button class="nav-btn next-btn">›</button>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
