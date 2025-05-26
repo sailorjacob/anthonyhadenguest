@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthony Haden-Guest - Cartoon Gallery</title>
+    <meta name="description" content="Explore the satirical cartoon world of Anthony Haden-Guest through an interactive luxury gallery experience.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Anthony Haden-Guest - Cartoon Gallery">
+    <meta property="og:description" content="Interactive gallery showcasing the satirical cartoons and visual commentary of renowned writer Anthony Haden-Guest.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery-styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <div class="cursor-follower"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Anthony Haden-Guest</h1>
+                <span class="nav-subtitle">Cartoon Gallery</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#smile-wars">Smile Wars</a></li>
+                <li><a href="#things-next">Things Next</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">The Satirical</span>
+                        <span class="title-line">World of</span>
+                        <span class="title-line highlight">Anthony Haden-Guest</span>
+                    </h1>
+                    <p class="hero-description">
+                        Step into an interactive gallery showcasing the wit, wisdom, and visual commentary 
+                        of one of culture's most perceptive observers through his cartoon masterpieces.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#smile-wars" class="btn btn-primary">
+                            <i data-lucide="image"></i>
+                            Explore Gallery
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i data-lucide="info"></i>
+                            About the Artist
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="gallery-preview">
+                        <div class="preview-frame">
+                            <div class="preview-content">
+                                <i data-lucide="palette"></i>
+                                <p>Interactive Gallery Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="smile-wars" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Smile Wars</h2>
+                    <p class="section-description">
+                        A satirical exploration of contemporary social dynamics through the lens of forced happiness and social facades.
+                    </p>
+                </div>
+                
+                <div class="gallery-grid" id="smile-wars-gallery">
+                    <div class="artwork-card" data-artwork="1">
+                        <div class="artwork-frame">
+                            <img src="https://drive.google.com/uc?export=view&id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu" 
+                                 alt="Smile Wars - Artwork 1" 
+                                 class="artwork-image"
+                                 loading="lazy">
+                            <div class="artwork-overlay">
+                                <div class="artwork-info">
+                                    <h3>Smile Wars #1</h3>
+                                    <p>Social Commentary</p>
+                                    <button class="view-btn" data-artwork="1">
+                                        <i data-lucide="maximize-2"></i>
+                                        View Full Size
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artwork-card" data-artwork="2">
+                        <div class="artwork-frame">
+                            <img src="https://drive.google.com/uc?export=view&id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b" 
+                                 alt="Smile Wars - Artwork 2" 
+                                 class="artwork-image"
+                                 loading="lazy">
+                            <div class="artwork-overlay">
+                                <div class="artwork-info">
+                                    <h3>Smile Wars #2</h3>
+                                    <p>Cultural Observation</p>
+                                    <button class="view-btn" data-artwork="2">
+                                        <i data-lucide="maximize-2"></i>
+                                        View Full Size
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artwork-card" data-artwork="3">
+                        <div class="artwork-frame">
+                            <img src="https://drive.google.com/uc?export=view&id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV" 
+                                 alt="Smile Wars - Artwork 3" 
+                                 class="artwork-image"
+                                 loading="lazy">
+                            <div class="artwork-overlay">
+                                <div class="artwork-info">
+                                    <h3>Smile Wars #3</h3>
+                                    <p>Social Dynamics</p>
+                                    <button class="view-btn" data-artwork="3">
+                                        <i data-lucide="maximize-2"></i>
+                                        View Full Size
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artwork-card" data-artwork="4">
+                        <div class="artwork-frame">
+                            <img src="https://drive.google.com/uc?export=view&id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86" 
+                                 alt="Smile Wars - Artwork 4" 
+                                 class="artwork-image"
+                                 loading="lazy">
+                            <div class="artwork-overlay">
+                                <div class="artwork-info">
+                                    <h3>Smile Wars #4</h3>
+                                    <p>Contemporary Critique</p>
+                                    <button class="view-btn" data-artwork="4">
+                                        <i data-lucide="maximize-2"></i>
+                                        View Full Size
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artwork-card" data-artwork="5">
+                        <div class="artwork-frame">
+                            <img src="https://drive.google.com/uc?export=view&id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ" 
+                                 alt="Smile Wars - Artwork 5" 
+                                 class="artwork-image"
+                                 loading="lazy">
+                            <div class="artwork-overlay">
+                                <div class="artwork-info">
+                                    <h3>Smile Wars #5</h3>
+                                    <p>Visual Commentary</p>
+                                    <button class="view-btn" data-artwork="5">
+                                        <i data-lucide="maximize-2"></i>
+                                        View Full Size
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artwork-card" data-artwork="6">
+                        <div class="artwork-frame">
+                            <img src="https://drive.google.com/uc?export=view&id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-" 
+                                 alt="Smile Wars - Artwork 6" 
+                                 class="artwork-image"
+                                 loading="lazy">
+                            <div class="artwork-overlay">
+                                <div class="artwork-info">
+                                    <h3>Smile Wars #6</h3>
+                                    <p>Satirical Insight</p>
+                                    <button class="view-btn" data-artwork="6">
+                                        <i data-lucide="maximize-2"></i>
+                                        View Full Size
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artwork-card" data-artwork="7">
+                        <div class="artwork-frame">
+                            <img src="https://drive.google.com/uc?export=view&id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe" 
+                                 alt="Smile Wars - Artwork 7" 
+                                 class="artwork-image"
+                                 loading="lazy">
+                            <div class="artwork-overlay">
+                                <div class="artwork-info">
+                                    <h3>Smile Wars #7</h3>
+                                    <p>Social Observation</p>
+                                    <button class="view-btn" data-artwork="7">
+                                        <i data-lucide="maximize-2"></i>
+                                        View Full Size
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="things-next" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Things Next</h2>
+                    <p class="section-description">
+                        Coming Soon - The next chapter in Anthony Haden-Guest's visual commentary series.
+                    </p>
+                </div>
+                
+                <div class="coming-soon">
+                    <div class="coming-soon-content">
+                        <i data-lucide="clock"></i>
+                        <h3>Things Next Series</h3>
+                        <p>Additional artwork will be added to this collection soon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About the Artist</h2>
+                        <p class="lead">
+                            Anthony Haden-Guest brings decades of cultural observation to his cartoon work, 
+                            combining sharp wit with keen social insight.
+                        </p>
+                        <p>
+                            As an Emmy Award-winning writer and cultural critic, Haden-Guest has documented 
+                            the intersections of art, society, and human behavior for major publications 
+                            including Vanity Fair, The New Yorker, and The Paris Review.
+                        </p>
+                        <p>
+                            His cartoon series represent a visual extension of his literary work, 
+                            offering satirical commentary on contemporary life with the same perceptive 
+                            eye that has made him one of culture's most distinctive voices.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">40+</div>
+                            <div class="stat-label">Years of Cultural Commentary</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Published Books</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1</div>
+                            <div class="stat-label">Emmy Award</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="lightbox-image-container">
+                <img id="lightbox-image" src="" alt="">
+            </div>
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <div class="lightbox-navigation">
+                <button class="nav-btn prev-btn">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Anthony Haden-Guest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="gallery-script.js"></script>
+</body>
+</html> 
