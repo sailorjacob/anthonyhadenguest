@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="gallery-styles.css">
+    <link rel="stylesheet" href="cartoons-styles.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -28,18 +28,10 @@
                 <span>Gallery</span>
             </div>
             <div class="nav-links">
-                <button id="about-btn" class="nav-link">About</button>
+                <a href="index.html" class="nav-link">← Return</a>
             </div>
         </div>
     </nav>
-
-    <!-- About Modal -->
-    <div id="about-modal" class="modal">
-        <div class="modal-content">
-            <button class="modal-close">&times;</button>
-            <p>Internationally known English-American writer, reporter, cartoonist, art critic, poet, and socialite who chronicles the intersections of art, culture, and society from New York City and London.</p>
-        </div>
-    </div>
 
     <!-- Main Gallery Container -->
     <main class="main-gallery" id="gallery-view">
@@ -76,7 +68,7 @@
             </div>
         </section>
 
-        <!-- Things Next Collection -->
+        <!-- Things Collection -->
         <section class="collection-section" data-collection="things-next">
             <div class="collection-header">
                 <h2>Things</h2>
@@ -106,7 +98,7 @@
                     <img src="https://drive.google.com/thumbnail?id=1ViPloe6k_qM8WgbNe2_9wFmXwwXmONh8&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
                 <div class="artwork-thumb" data-index="7">
-                    <img src="https://drive.google.com/uc?export=view&id=1EYvegxTStUuJ5eYZBaX9_QD5kwVfGI-j" alt="Untitled artwork by Anthony Haden-Guest" loading="lazy">
+                    <img src="https://drive.google.com/thumbnail?id=1WwC53TAn82qB6Rv-acRJBfT_D1aTB25r&sz=w400" alt="Things Next artwork" loading="lazy">
                 </div>
                 <div class="artwork-thumb" data-index="8">
                     <img src="https://drive.google.com/thumbnail?id=1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5&sz=w400" alt="Things Next artwork" loading="lazy">
@@ -157,101 +149,10 @@
         <div class="footer-content">
             <div class="footer-divider"></div>
             <p>&copy; 2025 Anthony Haden-Guest. All rights reserved.</p>
+            <a href="index.html" class="footer-link">Return to Main Site</a>
         </div>
     </footer>
 
-    <script src="gallery-script.js"></script>
-    <style>
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-        }
-
-        .modal-content {
-            background-color: #fff;
-            margin: 15% auto;
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 600px;
-            position: relative;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .modal-close {
-            position: absolute;
-            right: 1rem;
-            top: 1rem;
-            font-size: 1.5rem;
-            cursor: pointer;
-            background: none;
-            border: none;
-            color: #666;
-        }
-
-        .modal h2 {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-        }
-
-        .modal p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .modal-link {
-            display: inline-block;
-            margin-top: 1rem;
-            color: #666;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .modal-link:hover {
-            color: #333;
-        }
-
-        #about-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-family: inherit;
-            font-size: inherit;
-            color: inherit;
-            padding: 0;
-        }
-
-        #about-btn:hover {
-            color: #666;
-        }
-    </style>
-    <script>
-        // Modal functionality
-        const modal = document.getElementById('about-modal');
-        const btn = document.getElementById('about-btn');
-        const closeBtn = document.querySelector('.modal-close');
-
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="cartoons-script.js"></script>
 </body>
 </html> 
