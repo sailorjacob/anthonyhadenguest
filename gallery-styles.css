@@ -357,7 +357,7 @@ h1, h2, h3, h4 {
 .footer {
     background: var(--gallery-bg);
     color: var(--text-color);
-    padding: 4rem 3rem;
+    padding: 4rem 3rem 1.5rem 3rem;
     text-align: center;
     margin-top: 4rem;
     border-top: 1px solid var(--border-color);
@@ -385,7 +385,7 @@ h1, h2, h3, h4 {
 .footer-content p {
     font-size: 0.875rem;
     color: var(--text-light);
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     font-weight: 300;
     letter-spacing: 0.02em;
 }
