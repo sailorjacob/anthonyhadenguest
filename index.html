@@ -40,20 +40,6 @@
             <h2>About Anthony Haden-Guest</h2>
             <p>Internationally known English-American writer, reporter, cartoonist, art critic, poet, and socialite who chronicles the intersections of art, culture, and society from New York City and London.</p>
             <p>Born in Paris in 1937, Anthony has spent decades documenting the cultural landscape through his writing and visual art. His work has appeared in major publications including Vanity Fair, The New Yorker, The Paris Review, and Esquire.</p>
-            <div class="about-highlights">
-                <div class="highlight">
-                    <h3>Emmy Award Winner</h3>
-                    <p>New York Emmy Award for writing and narrating PBS documentary (1979)</p>
-                </div>
-                <div class="highlight">
-                    <h3>Published Author</h3>
-                    <p>Multiple books including "The Last Party" and "True Colors"</p>
-                </div>
-                <div class="highlight">
-                    <h3>Cultural Critic</h3>
-                    <p>Regular contributor to major magazines and publications</p>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -180,6 +166,7 @@
     <style>
         .modal {
             display: none;
+            visibility: hidden;
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -188,6 +175,14 @@
             height: 100%;
             background-color: rgba(0,0,0,0.5);
             backdrop-filter: blur(5px);
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .modal.show {
+            display: block;
+            visibility: visible;
+            opacity: 1;
         }
 
         .modal-content {
@@ -195,21 +190,17 @@
             margin: 10% auto;
             padding: 2.5rem;
             border-radius: 12px;
-            max-width: 700px;
+            max-width: 600px;
             position: relative;
             box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            animation: modalFadeIn 0.3s ease-out;
+            transform: translateY(-20px);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
         }
 
-        @keyframes modalFadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .modal.show .modal-content {
+            transform: translateY(0);
+            opacity: 1;
         }
 
         .modal-close {
@@ -243,36 +234,8 @@
             font-size: 1.1rem;
         }
 
-        .modal .about-highlights {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .modal .highlight {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .modal .highlight:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-
-        .modal .highlight h3 {
-            color: #1a1a1a;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .modal .highlight p {
-            font-size: 0.95rem;
-            color: #666;
-            margin: 0;
+        .modal p:last-child {
+            margin-bottom: 0;
         }
 
         #about-btn {
@@ -296,10 +259,6 @@
                 padding: 2rem;
                 width: 90%;
             }
-
-            .modal .about-highlights {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
     <script>
@@ -309,30 +268,29 @@
         const closeBtn = document.querySelector('.modal-close');
 
         btn.onclick = function() {
-            modal.style.display = "block";
+            modal.classList.add('show');
             document.body.style.overflow = "hidden"; // Prevent background scrolling
         }
 
         closeBtn.onclick = function() {
-            modal.style.display = "none";
+            modal.classList.remove('show');
             document.body.style.overflow = ""; // Restore scrolling
         }
 
         window.onclick = function(event) {
             if (event.target == modal) {
-                modal.style.display = "none";
+                modal.classList.remove('show');
                 document.body.style.overflow = ""; // Restore scrolling
             }
         }
 
         // Close modal on escape key
         document.addEventListener('keydown', function(event) {
-            if (event.key === "Escape" && modal.style.display === "block") {
-                modal.style.display = "none";
+            if (event.key === "Escape" && modal.classList.contains('show')) {
+                modal.classList.remove('show');
                 document.body.style.overflow = ""; // Restore scrolling
             }
         });
     </script>
 </body>
-</html> 
 </html> 
