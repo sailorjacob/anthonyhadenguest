@@ -28,7 +28,7 @@
                 <span>Gallery</span>
             </div>
             <div class="nav-links">
-                <a href="about.html" class="nav-link">About</a>
+                <button id="about-btn" class="nav-link">About</button>
             </div>
         </div>
     </nav>
@@ -37,7 +37,23 @@
     <div id="about-modal" class="modal">
         <div class="modal-content">
             <button class="modal-close">&times;</button>
+            <h2>About Anthony Haden-Guest</h2>
             <p>Internationally known English-American writer, reporter, cartoonist, art critic, poet, and socialite who chronicles the intersections of art, culture, and society from New York City and London.</p>
+            <p>Born in Paris in 1937, Anthony has spent decades documenting the cultural landscape through his writing and visual art. His work has appeared in major publications including Vanity Fair, The New Yorker, The Paris Review, and Esquire.</p>
+            <div class="about-highlights">
+                <div class="highlight">
+                    <h3>Emmy Award Winner</h3>
+                    <p>New York Emmy Award for writing and narrating PBS documentary (1979)</p>
+                </div>
+                <div class="highlight">
+                    <h3>Published Author</h3>
+                    <p>Multiple books including "The Last Party" and "True Colors"</p>
+                </div>
+                <div class="highlight">
+                    <h3>Cultural Critic</h3>
+                    <p>Regular contributor to major magazines and publications</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -171,52 +187,92 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
         }
 
         .modal-content {
             background-color: #fff;
-            margin: 15% auto;
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 600px;
+            margin: 10% auto;
+            padding: 2.5rem;
+            border-radius: 12px;
+            max-width: 700px;
             position: relative;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            animation: modalFadeIn 0.3s ease-out;
+        }
+
+        @keyframes modalFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .modal-close {
             position: absolute;
-            right: 1rem;
-            top: 1rem;
-            font-size: 1.5rem;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 1.8rem;
             cursor: pointer;
             background: none;
             border: none;
             color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .modal-close:hover {
+            color: #333;
         }
 
         .modal h2 {
             margin-top: 0;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 2rem;
+            color: #1a1a1a;
         }
 
         .modal p {
-            margin-bottom: 1rem;
-            line-height: 1.6;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
             color: #333;
+            font-size: 1.1rem;
         }
 
-        .modal-link {
-            display: inline-block;
-            margin-top: 1rem;
+        .modal .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .modal .highlight {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .modal .highlight:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .modal .highlight h3 {
+            color: #1a1a1a;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal .highlight p {
+            font-size: 0.95rem;
             color: #666;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .modal-link:hover {
-            color: #333;
+            margin: 0;
         }
 
         #about-btn {
@@ -227,32 +283,56 @@
             font-size: inherit;
             color: inherit;
             padding: 0;
+            transition: color 0.3s ease;
         }
 
         #about-btn:hover {
             color: #666;
         }
+
+        @media (max-width: 768px) {
+            .modal-content {
+                margin: 5% auto;
+                padding: 2rem;
+                width: 90%;
+            }
+
+            .modal .about-highlights {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
     <script>
-        /* Modal functionality - no longer used for About link
+        // Modal functionality
         const modal = document.getElementById('about-modal');
         const btn = document.getElementById('about-btn');
         const closeBtn = document.querySelector('.modal-close');
 
         btn.onclick = function() {
             modal.style.display = "block";
+            document.body.style.overflow = "hidden"; // Prevent background scrolling
         }
 
         closeBtn.onclick = function() {
             modal.style.display = "none";
+            document.body.style.overflow = ""; // Restore scrolling
         }
 
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
+                document.body.style.overflow = ""; // Restore scrolling
             }
         }
-        */
+
+        // Close modal on escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape" && modal.style.display === "block") {
+                modal.style.display = "none";
+                document.body.style.overflow = ""; // Restore scrolling
+            }
+        });
     </script>
 </body>
+</html> 
 </html> 
