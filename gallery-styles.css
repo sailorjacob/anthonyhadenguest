@@ -738,7 +738,7 @@ body.viewing-image .navbar {
     max-width: 30vw;
     max-height: 40vh;
     opacity: 0.5;
-    z-index: 0;
+    z-index: 10;
     pointer-events: none;
     background: url('https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/ahgofliberty-GEF6YshBkGfj8aftjT6efWgoQF0d5S.png') no-repeat left bottom;
     background-size: contain;
