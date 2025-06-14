@@ -622,4 +622,107 @@ body.viewing-image .navbar {
 .main-gallery,
 .footer {
     will-change: transform, opacity;
-} 
+}
+
+/* --- Waiting For The Bomb Album Styles --- */
+.album-section .album-tagline {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.album-section .album-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.album-tracks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 100%;
+}
+
+.track {
+    background: var(--gallery-bg);
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--subtle-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: var(--transition);
+    width: 100%;
+    overflow: hidden;
+}
+
+.track:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: var(--frame-shadow-hover);
+}
+
+.track-title {
+    font-family: var(--font-serif);
+    font-size: 1.125rem;
+    color: var(--primary-color);
+}
+
+.track audio {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.album-section details {
+    margin-top: 2rem;
+}
+
+.album-section details summary {
+    cursor: pointer;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.album-section details summary::-webkit-details-marker {
+    display: none;
+}
+
+.lyrics-text {
+    white-space: pre-wrap;
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: var(--subtle-shadow);
+}
+
+/* Add responsive styles for album tracks */
+@media (max-width: 768px) {
+    .album-tracks {
+        grid-template-columns: 1fr;
+    }
+    
+    .track {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .album-tracks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1201px) {
+    .album-tracks {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* --- End Album Styles --- */ 
