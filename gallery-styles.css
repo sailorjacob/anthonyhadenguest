@@ -725,4 +725,22 @@ body.viewing-image .navbar {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-/* --- End Album Styles --- */ 
+/* --- End Album Styles --- */
+
+.homepage-bg-image {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/ahgofliberty-GEF6YshBkGfj8aftjT6efWgoQF0d5S.png') no-repeat left bottom;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+    pointer-events: none;
+}
+
+body, .navbar, .main-gallery, .collection-section, .footer, .image-viewer {
+    position: relative;
+    z-index: 1;
+} 
