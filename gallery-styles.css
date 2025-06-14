@@ -38,8 +38,6 @@ body {
     font-weight: 300;
     letter-spacing: 0.01em;
     overflow-x: hidden;
-    position: relative;
-    z-index: 1;
 }
 
 /* Typography */
@@ -727,27 +725,4 @@ body.viewing-image .navbar {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-/* --- End Album Styles --- */
-
-.liberty-bg-image {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 320px;
-    height: auto;
-    max-width: 30vw;
-    max-height: 40vh;
-    opacity: 0.5;
-    z-index: 1;
-    pointer-events: none;
-    background: url('https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/ahgofliberty-GEF6YshBkGfj8aftjT6efWgoQF0d5S.png') no-repeat left bottom;
-    background-size: contain;
-}
-
-/* Make main content backgrounds transparent so the liberty image is visible */
-.main-gallery,
-.collection-section,
-.album-section {
-    background: transparent !important;
-    z-index: 2;
-} 
+/* --- End Album Styles --- */ 
