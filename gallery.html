@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anthony Haden-Guest - Cartoon Gallery</title>
-    <meta name="description" content="Explore the satirical cartoon world of Anthony Haden-Guest through an interactive luxury gallery experience.">
+    <meta name="description" content="Explore the satirical cartoon collections of Anthony Haden-Guest - Smile Wars and Things Next series.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -12,315 +12,464 @@
     <meta property="og:description" content="Interactive gallery showcasing the satirical cartoons and visual commentary of renowned writer Anthony Haden-Guest.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='%23C0C0C0' stroke='%23808080' stroke-width='2'/></svg>">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="gallery-styles.css">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 </head>
 <body>
-    <div class="cursor-follower"></div>
-    
-    <header class="header">
-        <nav class="nav">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="nav-brand">
                 <h1>Anthony Haden-Guest</h1>
-                <span class="nav-subtitle">Cartoon Gallery</span>
+                <span>Gallery</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#smile-wars">Smile Wars</a></li>
-                <li><a href="#things-next">Things Next</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="timeline.html" class="nav-link">Timeline</a>
+                <button id="about-btn" class="nav-link">About</button>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-background">
-                <div class="floating-shapes">
-                    <div class="shape shape-1"></div>
-                    <div class="shape shape-2"></div>
-                    <div class="shape shape-3"></div>
+    <!-- About Modal -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>About Anthony Haden-Guest</h2>
+            <p>Internationally known English-American writer, reporter, cartoonist, art critic, poet, and socialite who chronicles the intersections of art, culture, and society from New York City and London.</p>
+            <p>Born in Paris in 1937, Anthony has spent decades documenting the cultural landscape through his writing and visual art. His work has appeared in major publications including Vanity Fair, The New Yorker, The Paris Review, and Esquire.</p>
+        </div>
+    </div>
+
+    <!-- Main Gallery Container -->
+    <main class="main-gallery" id="gallery-view">
+        
+        <!-- Smile Wars Collection -->
+        <section class="collection-section" data-collection="smile-wars">
+            <div class="collection-header">
+                <h2>Smile Wars</h2>
+                <span class="collection-count">7 artworks</span>
+            </div>
+            
+            <div class="camera-roll" id="smile-wars-roll">
+                <div class="artwork-thumb" data-index="0">
+                    <img src="https://drive.google.com/thumbnail?id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu&sz=w400" alt="Smile Wars artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="1">
+                    <img src="https://drive.google.com/thumbnail?id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b&sz=w400" alt="Smile Wars artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="2">
+                    <img src="https://drive.google.com/thumbnail?id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV&sz=w400" alt="Smile Wars artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="3">
+                    <img src="https://drive.google.com/thumbnail?id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86&sz=w400" alt="Smile Wars artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="4">
+                    <img src="https://drive.google.com/thumbnail?id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ&sz=w400" alt="Smile Wars artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="5">
+                    <img src="https://drive.google.com/thumbnail?id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-&sz=w400" alt="Smile Wars artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="6">
+                    <img src="https://drive.google.com/thumbnail?id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe&sz=w400" alt="Smile Wars artwork" loading="lazy">
                 </div>
             </div>
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">The Satirical</span>
-                        <span class="title-line">World of</span>
-                        <span class="title-line highlight">Anthony Haden-Guest</span>
-                    </h1>
-                    <p class="hero-description">
-                        Step into an interactive gallery showcasing the wit, wisdom, and visual commentary 
-                        of one of culture's most perceptive observers through his cartoon masterpieces.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#smile-wars" class="btn btn-primary">
-                            <i data-lucide="image"></i>
-                            Explore Gallery
-                        </a>
-                        <a href="#about" class="btn btn-secondary">
-                            <i data-lucide="info"></i>
-                            About the Artist
-                        </a>
+        </section>
+
+        <!-- Things Next Collection -->
+        <section class="collection-section" data-collection="things-next">
+            <div class="collection-header">
+                <h2>Things</h2>
+                <span class="collection-count">13 artworks</span>
+            </div>
+            
+            <div class="camera-roll" id="things-next-roll">
+                <div class="artwork-thumb" data-index="0">
+                    <img src="https://drive.google.com/thumbnail?id=1A7QXz0vClnkrnofbuxVRtDqeDls8rcKc&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="1">
+                    <img src="https://drive.google.com/thumbnail?id=1E9M_YCUHsW1-SurimINJnMrC1ZahozPn&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="2">
+                    <img src="https://drive.google.com/thumbnail?id=1F7H7caYwGZkp8EE4DK-aO9diwIvg0Oii&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="3">
+                    <img src="https://drive.google.com/thumbnail?id=1HkSM-aVwpBUz4KVRDX__XSNIBMHQe7xI&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="4">
+                    <img src="https://drive.google.com/thumbnail?id=1RMcuXx5w-I_5WqgdI8Y3urA531XB8Sn-&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="5">
+                    <img src="https://drive.google.com/thumbnail?id=1UoxtKGQKvk5bFF4qyYiROtwhSRh7iFh1&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="6">
+                    <img src="https://drive.google.com/thumbnail?id=1ViPloe6k_qM8WgbNe2_9wFmXwwXmONh8&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="7">
+                    <img src="https://drive.google.com/thumbnail?id=1EYvegxTStUuJ5eYZBaX9_QD5kwVfGI-j&sz=w400" alt="Things artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="8">
+                    <img src="https://drive.google.com/thumbnail?id=1dh1gacfbzJIB-CfYcJSth3sQ6MtIlfj5&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="9">
+                    <img src="https://drive.google.com/thumbnail?id=1fH3GrsjEWQf47cH79ND4CDniMVzTa-Wr&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="10">
+                    <img src="https://drive.google.com/thumbnail?id=1i7uU-qR3ciIqABIVxhK-sm9DLBMXxjmP&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="11">
+                    <img src="https://drive.google.com/thumbnail?id=1nReW3MK6B7M2ZuKcebvNSz3JlUu_Kl1z&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+                <div class="artwork-thumb" data-index="12">
+                    <img src="https://drive.google.com/thumbnail?id=1tMMHlBCn6ZX0DvkPL2dXvaIRQO4j1ikM&sz=w400" alt="Things Next artwork" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Waiting For The Bomb Album Section - Hidden -->
+        <!-- 
+        <section class="collection-section album-section" id="waiting-for-the-bomb" style="display: none;">
+            <div class="collection-header">
+                <h2>WAITING FOR THE BOMB</h2>
+                <span class="collection-count">Verses & AI-Generated Songs</span>
+            </div>
+
+            <p class="album-tagline">A collaboration between Anthony Haden-Guest and Mark Freiser</p>
+
+            <div class="album-content">
+                <div class="lyrics-main">
+                    <div class="lyrics-header">
+                        <h3>The Verses</h3>
+                        <p class="lyrics-intro">Nine genre-bending interpretations of Anthony's satirical rhymes created with generative AI music tools. <a href="https://whitehotmagazine.com/articles/music-song-results-are-stunning/6766" target="_blank" rel="noopener">Read the full story on Whitehot Magazine</a>.</p>
+                    </div>
+                    
+                    <div class="lyrics-text">
+                        <p>I understand a brand-new virus<br>
+                        Is on the loose in our dimension<br>
+                        The toll it's taking will soon rise higher<br>
+                        Or so I heard a science dude mention<br>
+                        Not that we're paying too much attention<br>
+                        <em>Rumtumtum, Tiddlypom,</em><br>
+                        <em>Let's all go out and have us some fun</em><br>
+                        <em>Not sit around waiting for the bomb</em></p>
+
+                        <p>Okay, we've rather been feeling the heat<br>
+                        Some whine it'll get a lot hotter than this<br>
+                        So it's hello, climate? Say goodbye, mate?<br>
+                        Squoosh those liars, truth deniers, starting fires<br>
+                        Don't let them spoil our meet and greet<br>
+                        Get out of the way of our dancing feet<br>
+                        A cool party is something we just mustn't miss<br>
+                        It's dumb just to sit on your bum at home<br>
+                        <em>Glooming, and waiting for the bomb</em></p>
+
+                        <p>AI's already everywhere<br>
+                        It's in the Earth, the Sea, the Air<br>
+                        It's taken over the brain, the eye, the ear<br>
+                        It's gotten into our art, our song, our writing<br>
+                        So it knows how we make stuff. Will it ever know why?<br>
+                        No problem, says Generative AI.<br>
+                        We'll be on top of that before much time goes by<br>
+                        Now AI's muscling up to do our fighting<br>
+                        So things might be getting quite exciting<br>
+                        Perhaps you can guess where I'm coming from?<br>
+                        <em>Rumtumtum, Tiddlypom!</em><br>
+                        <em>We're not just waiting for the bomb</em></p>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="gallery-preview">
-                        <div class="preview-frame">
-                            <div class="preview-content">
-                                <i data-lucide="palette"></i>
-                                <p>Interactive Gallery Experience</p>
-                            </div>
+
+                <div class="album-tracks-sidebar">
+                    <h4>Listen to the Interpretations</h4>
+                    <div class="track-list">
+                        <div class="track-item">
+                            <span class="track-name">Dixieland</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/DIXIELAND-SvI4eFTyBQRVfBTuDKVkmYa5IhIPc2.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">J-Pop</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/J-POP-uEjBSa8LoAXm36nrtKDVLnmTZfhs6K.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">Bluegrass</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/BLUEGRASS-mdhQe5DTGL9s5A6bXvC6mvDaRw6QKf.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">Bossa Nova</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/BOSSANOVA-GgnBdsz0Cs2t56tUsC3FzmOweAFqAp.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">Yacht Rock</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/YACHT%20ROCK-2EgIwY86MZx36IhOG0DYuF8o8WmGjs.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">Disco</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/DISCO-A7hThhzQs7r7XMepvKU9sVWlTIhXZR.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">Sea Shanty</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/SEA%20SHANTY-QhKWsXaAG990F4HDKQEk34JmLIRPOV.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">Pirate</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/PIRATE-21QZsGMoPBevoujWejL3DjerUE4YVY.mp3"></audio>
+                        </div>
+                        <div class="track-item">
+                            <span class="track-name">K-Pop</span>
+                            <audio controls preload="none" src="https://cmufr8nyb13w82ie.public.blob.vercel-storage.com/waitingforthebomb/K-POP-bSTfwOw9H4V3A4fOjdIuMTZ6gtQRgf.mp3"></audio>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        -->
 
-        <section id="smile-wars" class="gallery-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Smile Wars</h2>
-                    <p class="section-description">
-                        A satirical exploration of contemporary social dynamics through the lens of forced happiness and social facades.
-                    </p>
-                </div>
-                
-                <div class="gallery-grid" id="smile-wars-gallery">
-                    <div class="artwork-card" data-artwork="1">
-                        <div class="artwork-frame">
-                            <img src="https://drive.google.com/uc?export=view&id=15qBDc3LPXkE1W5mcnXw9BcKfibgZ-cWu" 
-                                 alt="Smile Wars - Artwork 1" 
-                                 class="artwork-image"
-                                 loading="lazy">
-                            <div class="artwork-overlay">
-                                <div class="artwork-info">
-                                    <h3>Smile Wars #1</h3>
-                                    <p>Social Commentary</p>
-                                    <button class="view-btn" data-artwork="1">
-                                        <i data-lucide="maximize-2"></i>
-                                        View Full Size
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="artwork-card" data-artwork="2">
-                        <div class="artwork-frame">
-                            <img src="https://drive.google.com/uc?export=view&id=1HdzxIvntWTRYEetW3x-oLvSXFuoijq1b" 
-                                 alt="Smile Wars - Artwork 2" 
-                                 class="artwork-image"
-                                 loading="lazy">
-                            <div class="artwork-overlay">
-                                <div class="artwork-info">
-                                    <h3>Smile Wars #2</h3>
-                                    <p>Cultural Observation</p>
-                                    <button class="view-btn" data-artwork="2">
-                                        <i data-lucide="maximize-2"></i>
-                                        View Full Size
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="artwork-card" data-artwork="3">
-                        <div class="artwork-frame">
-                            <img src="https://drive.google.com/uc?export=view&id=1K8cpyUtTpTLxwyYGhL1E5JW8jxcXS1bV" 
-                                 alt="Smile Wars - Artwork 3" 
-                                 class="artwork-image"
-                                 loading="lazy">
-                            <div class="artwork-overlay">
-                                <div class="artwork-info">
-                                    <h3>Smile Wars #3</h3>
-                                    <p>Social Dynamics</p>
-                                    <button class="view-btn" data-artwork="3">
-                                        <i data-lucide="maximize-2"></i>
-                                        View Full Size
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="artwork-card" data-artwork="4">
-                        <div class="artwork-frame">
-                            <img src="https://drive.google.com/uc?export=view&id=1Lt-eHT25vxcP8L_Lw_oaFgCK5yQ6qT86" 
-                                 alt="Smile Wars - Artwork 4" 
-                                 class="artwork-image"
-                                 loading="lazy">
-                            <div class="artwork-overlay">
-                                <div class="artwork-info">
-                                    <h3>Smile Wars #4</h3>
-                                    <p>Contemporary Critique</p>
-                                    <button class="view-btn" data-artwork="4">
-                                        <i data-lucide="maximize-2"></i>
-                                        View Full Size
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="artwork-card" data-artwork="5">
-                        <div class="artwork-frame">
-                            <img src="https://drive.google.com/uc?export=view&id=1M9C7al8RI3b0YGHgbSKuFWMekND0kbHZ" 
-                                 alt="Smile Wars - Artwork 5" 
-                                 class="artwork-image"
-                                 loading="lazy">
-                            <div class="artwork-overlay">
-                                <div class="artwork-info">
-                                    <h3>Smile Wars #5</h3>
-                                    <p>Visual Commentary</p>
-                                    <button class="view-btn" data-artwork="5">
-                                        <i data-lucide="maximize-2"></i>
-                                        View Full Size
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="artwork-card" data-artwork="6">
-                        <div class="artwork-frame">
-                            <img src="https://drive.google.com/uc?export=view&id=1hVZe2oaaoMe5_RdLtzsKDBVQeJSkk2_-" 
-                                 alt="Smile Wars - Artwork 6" 
-                                 class="artwork-image"
-                                 loading="lazy">
-                            <div class="artwork-overlay">
-                                <div class="artwork-info">
-                                    <h3>Smile Wars #6</h3>
-                                    <p>Satirical Insight</p>
-                                    <button class="view-btn" data-artwork="6">
-                                        <i data-lucide="maximize-2"></i>
-                                        View Full Size
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="artwork-card" data-artwork="7">
-                        <div class="artwork-frame">
-                            <img src="https://drive.google.com/uc?export=view&id=1upzI1GpCAOltJROvnje_7j0h0M8hbCUe" 
-                                 alt="Smile Wars - Artwork 7" 
-                                 class="artwork-image"
-                                 loading="lazy">
-                            <div class="artwork-overlay">
-                                <div class="artwork-info">
-                                    <h3>Smile Wars #7</h3>
-                                    <p>Social Observation</p>
-                                    <button class="view-btn" data-artwork="7">
-                                        <i data-lucide="maximize-2"></i>
-                                        View Full Size
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="things-next" class="gallery-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Things Next</h2>
-                    <p class="section-description">
-                        Coming Soon - The next chapter in Anthony Haden-Guest's visual commentary series.
-                    </p>
-                </div>
-                
-                <div class="coming-soon">
-                    <div class="coming-soon-content">
-                        <i data-lucide="clock"></i>
-                        <h3>Things Next Series</h3>
-                        <p>Additional artwork will be added to this collection soon.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About the Artist</h2>
-                        <p class="lead">
-                            Anthony Haden-Guest brings decades of cultural observation to his cartoon work, 
-                            combining sharp wit with keen social insight.
-                        </p>
-                        <p>
-                            As an Emmy Award-winning writer and cultural critic, Haden-Guest has documented 
-                            the intersections of art, society, and human behavior for major publications 
-                            including Vanity Fair, The New Yorker, and The Paris Review.
-                        </p>
-                        <p>
-                            His cartoon series represent a visual extension of his literary work, 
-                            offering satirical commentary on contemporary life with the same perceptive 
-                            eye that has made him one of culture's most distinctive voices.
-                        </p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">40+</div>
-                            <div class="stat-label">Years of Cultural Commentary</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">6</div>
-                            <div class="stat-label">Published Books</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">1</div>
-                            <div class="stat-label">Emmy Award</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <div class="lightbox-content">
-            <button class="lightbox-close">
-                <i data-lucide="x"></i>
+    <!-- Full Page Image Viewer -->
+    <div class="image-viewer" id="image-viewer">
+        <div class="viewer-header">
+            <button class="back-btn" id="back-btn" aria-label="Back to gallery">
+                <span>← Back to Gallery</span>
             </button>
-            <div class="lightbox-image-container">
-                <img id="lightbox-image" src="" alt="">
+            <div class="viewer-info">
+                <span class="viewer-title" id="viewer-title"></span>
+                <span class="viewer-counter" id="viewer-counter"></span>
             </div>
-            <div class="lightbox-info">
-                <h3 id="lightbox-title"></h3>
-                <p id="lightbox-description"></p>
+        </div>
+        
+        <div class="viewer-content">
+            <div class="image-container">
+                <img id="viewer-image" src="" alt="">
             </div>
-            <div class="lightbox-navigation">
-                <button class="nav-btn prev-btn">
-                    <i data-lucide="chevron-left"></i>
-                </button>
-                <button class="nav-btn next-btn">
-                    <i data-lucide="chevron-right"></i>
-                </button>
+            
+            <div class="viewer-nav">
+                <button class="viewer-btn prev-btn" id="prev-btn" aria-label="Previous artwork">‹</button>
+                <button class="viewer-btn next-btn" id="next-btn" aria-label="Next artwork">›</button>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-content">
+            <div class="footer-divider"></div>
             <p>&copy; 2025 Anthony Haden-Guest. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="gallery-script.js"></script>
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .modal-close {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: #666;
+        }
+
+        .modal h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+        }
+
+        .modal p {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .modal-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #666;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .modal-link:hover {
+            color: #333;
+        }
+
+        #about-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            padding: 0;
+        }
+
+        #about-btn:hover {
+            color: #666;
+        }
+
+        /* Waiting for the Bomb Section Styling - Hidden */
+        /*
+        .album-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .lyrics-main {
+            background: #fafafa;
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 4px solid #333;
+        }
+
+        .lyrics-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin: 0 0 1rem 0;
+            color: #333;
+        }
+
+        .lyrics-intro {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .lyrics-intro a {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .lyrics-text {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .lyrics-text p {
+            margin-bottom: 2rem;
+        }
+
+        .lyrics-text em {
+            font-style: italic;
+            color: #555;
+            font-weight: 600;
+        }
+
+        .album-tracks-sidebar {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            height: fit-content;
+        }
+
+        .album-tracks-sidebar h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            margin: 0 0 1.5rem 0;
+            color: #333;
+            text-align: center;
+        }
+
+        .track-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .track-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            background: #f8f8f8;
+            border-radius: 6px;
+            border: 1px solid #e8e8e8;
+        }
+
+        .track-name {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .track-item audio {
+            width: 100%;
+            height: 32px;
+            border-radius: 4px;
+        }
+
+        .track-item audio::-webkit-media-controls-panel {
+            background-color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .album-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .lyrics-main {
+                padding: 1.5rem;
+            }
+            
+            .lyrics-text {
+                font-size: 1rem;
+            }
+        }
+        */
+    </style>
+    <script>
+        // Modal functionality
+        const modal = document.getElementById('about-modal');
+        const btn = document.getElementById('about-btn');
+        const closeBtn = document.querySelector('.modal-close');
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html> 
