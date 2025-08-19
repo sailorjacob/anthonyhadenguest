@@ -422,6 +422,22 @@ h1, h2, h3, h4 {
     }
 }
 
+/* Floating animation for balloons */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(-1deg);
+    }
+    75% {
+        transform: translateY(-12px) rotate(0.5deg);
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-container,
