@@ -367,6 +367,9 @@ main {
     background-repeat: no-repeat;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.2));
     overflow: hidden;
+    /* Prevent expansion of page size */
+    max-height: 100%;
+    clip: rect(0, auto, 100%, 0);
 }
 
 /* Small static balloon decorations */

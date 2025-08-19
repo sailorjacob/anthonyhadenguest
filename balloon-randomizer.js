@@ -32,16 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {
         return balloonArray[Math.floor(Math.random() * balloonArray.length)];
     }
 
-    // Corner positioning options for dramatic cropping
+    // Corner positioning options for dramatic cropping (avoiding bottom expansion)
     const cornerPositions = [
         { top: '-30%', left: '-30%', transform: 'rotate(-15deg)' },
         { top: '-30%', right: '-30%', transform: 'rotate(15deg)' },
-        { bottom: '-30%', left: '-30%', transform: 'rotate(15deg)' },
-        { bottom: '-30%', right: '-30%', transform: 'rotate(-15deg)' },
+        { top: '70%', left: '-30%', transform: 'rotate(15deg)' },
+        { top: '70%', right: '-30%', transform: 'rotate(-15deg)' },
         { top: '-20%', left: '20%', transform: 'rotate(-25deg)' },
         { top: '-20%', right: '20%', transform: 'rotate(25deg)' },
-        { bottom: '-20%', left: '30%', transform: 'rotate(20deg)' },
-        { bottom: '-20%', right: '30%', transform: 'rotate(-20deg)' }
+        { top: '60%', left: '30%', transform: 'rotate(20deg)' },
+        { top: '60%', right: '30%', transform: 'rotate(-20deg)' }
     ];
 
     function randomizeBalloon(balloonElement, balloonArray) {
