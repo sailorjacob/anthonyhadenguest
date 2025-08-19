@@ -368,6 +368,9 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
     filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.2));
+    /* Ensure balloons don't cause page overflow */
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 /* Small static balloon decorations */
