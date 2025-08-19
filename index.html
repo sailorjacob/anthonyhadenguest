@@ -19,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="balloon-randomizer.js"></script>
 </head>
 <body>
     <header class="header">
@@ -61,11 +62,8 @@
                 </div>
                 </div>
             </div>
-            <!-- Full-width balloon background -->
-            <div class="balloon-fullwidth-background balloon-hero-bg"></div>
-            <!-- Small static balloon decorations -->
-            <div class="balloon-decoration balloon-small-1"></div>
-            <div class="balloon-decoration balloon-small-2"></div>
+            <!-- Dynamic random balloon background -->
+            <div id="hero-balloon" class="balloon-dynamic-background"></div>
         </section>
 
         <section class="signature-section" style="position: relative;">
@@ -74,8 +72,8 @@
                      alt="Anthony Haden-Guest Signature" 
                      class="signature">
             </div>
-            <!-- Small static balloon decoration -->
-            <div class="balloon-decoration balloon-small-4"></div>
+            <!-- Dynamic random balloon background -->
+            <div id="signature-balloon" class="balloon-dynamic-background"></div>
         </section>
 
         <section id="about" class="section" style="padding: 6rem 0; background: var(--primary-white); position: relative;">
@@ -116,10 +114,8 @@
                 </div>
             </div>
 
-            <!-- Full-width balloon background -->
-            <div class="balloon-fullwidth-background balloon-about-bg"></div>
-            <!-- Small static balloon decoration -->
-            <div class="balloon-decoration balloon-small-3"></div>
+            <!-- Dynamic random balloon background -->
+            <div id="about-balloon" class="balloon-dynamic-background"></div>
         </section>
 
         <!-- Notable Works Section - Hidden, moved to dedicated works.html page -->
@@ -217,12 +213,8 @@
                 </blockquote>
             </div>
             <!-- Balloon Decorations - White lines for dark background -->
-            <!-- Full-width white balloon background for dark section -->
-            <div class="balloon-fullwidth-background balloon-quote-bg"></div>
-            <!-- Small static white balloons -->
-            <div class="balloon-decoration balloon-white-small-1"></div>
-            <div class="balloon-decoration balloon-white-small-2"></div>
-            <div class="balloon-decoration balloon-white-small-3"></div>
+            <!-- Dynamic random balloon background -->
+            <div id="quote-balloon" class="balloon-dynamic-background"></div>
         </section>
 
         <!-- Charlie Rose Interview Section - Hidden for now -->
