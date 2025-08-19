@@ -32,16 +32,16 @@ document.addEventListener('DOMContentLoaded', function() {
         return balloonArray[Math.floor(Math.random() * balloonArray.length)];
     }
 
-    // Corner positioning options for dramatic cropping (avoiding bottom expansion)
+    // Corner positioning options for dramatic cropping
     const cornerPositions = [
         { top: '-30%', left: '-30%', transform: 'rotate(-15deg)' },
         { top: '-30%', right: '-30%', transform: 'rotate(15deg)' },
-        { top: '70%', left: '-30%', transform: 'rotate(15deg)' },
-        { top: '70%', right: '-30%', transform: 'rotate(-15deg)' },
+        { bottom: '-30%', left: '-30%', transform: 'rotate(15deg)' },
+        { bottom: '-30%', right: '-30%', transform: 'rotate(-15deg)' },
         { top: '-20%', left: '20%', transform: 'rotate(-25deg)' },
         { top: '-20%', right: '20%', transform: 'rotate(25deg)' },
-        { top: '60%', left: '30%', transform: 'rotate(20deg)' },
-        { top: '60%', right: '30%', transform: 'rotate(-20deg)' }
+        { bottom: '-20%', left: '30%', transform: 'rotate(20deg)' },
+        { bottom: '-20%', right: '30%', transform: 'rotate(-20deg)' }
     ];
 
     function randomizeBalloon(balloonElement, balloonArray) {
@@ -67,9 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
         balloonElement.style.right = position.right || 'auto';
         balloonElement.style.transform = `rotate(${finalRotation}deg)`;
         
-        // Random scale for variety
-        const scale = getRandomFloat(0.8, 1.2);
-        balloonElement.style.transform += ` scale(${scale})`;
+        // Keep original scale - no random scaling
+        // balloonElement.style.transform += ` scale(${scale})`;  // Removed to maintain original size
     }
 
     // Apply random balloons to each section
