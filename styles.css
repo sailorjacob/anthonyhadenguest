@@ -280,9 +280,9 @@ main {
 }
 
 .timeline-content-expanded {
-    flex: 1;
+        flex: 1;
     background: var(--light-gray);
-    padding: 1.5rem;
+        padding: 1.5rem;
     border: 1px solid var(--border-gray);
     transition: all 0.2s ease;
 }
@@ -317,7 +317,7 @@ main {
     color: var(--primary-black);
     padding: 0.25rem 0.75rem;
     border: 1px solid var(--border-gray);
-    font-size: 0.8rem;
+        font-size: 0.8rem;
     font-weight: 400;
 }
 
@@ -340,7 +340,7 @@ main {
 
 .timeline-navigation {
     display: flex;
-    justify-content: center;
+        justify-content: center;
     gap: 1rem;
     margin-top: 3rem;
     padding-top: 2rem;
@@ -362,7 +362,7 @@ main {
     width: 150px;
     height: 150px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/1.png') center/contain no-repeat;
-    opacity: 0.25;
+    opacity: 1;
 }
 
 .balloon-black-2 {
@@ -371,7 +371,7 @@ main {
     width: 130px;
     height: 130px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/2.png') center/contain no-repeat;
-    opacity: 0.20;
+    opacity: 1;
     animation-delay: -2s;
 }
 
@@ -381,7 +381,7 @@ main {
     width: 140px;
     height: 140px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/3.png') center/contain no-repeat;
-    opacity: 0.22;
+    opacity: 1;
     animation-delay: -4s;
 }
 
@@ -391,7 +391,7 @@ main {
     width: 110px;
     height: 110px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/4.png') center/contain no-repeat;
-    opacity: 0.18;
+    opacity: 1;
     animation-delay: -1s;
 }
 
@@ -401,7 +401,7 @@ main {
     width: 170px;
     height: 170px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/5.png') center/contain no-repeat;
-    opacity: 0.28;
+    opacity: 1;
     animation-delay: -3s;
 }
 
@@ -411,7 +411,7 @@ main {
     width: 120px;
     height: 120px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/7.png') center/contain no-repeat;
-    opacity: 0.19;
+    opacity: 1;
     animation-delay: -5s;
 }
 
@@ -422,7 +422,7 @@ main {
     width: 140px;
     height: 140px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/8.png') center/contain no-repeat;
-    opacity: 0.35;
+    opacity: 1;
 }
 
 .balloon-white-2 {
@@ -431,7 +431,7 @@ main {
     width: 160px;
     height: 160px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/9.png') center/contain no-repeat;
-    opacity: 0.30;
+    opacity: 1;
     animation-delay: -2s;
 }
 
@@ -441,7 +441,7 @@ main {
     width: 120px;
     height: 120px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/10.png') center/contain no-repeat;
-    opacity: 0.25;
+    opacity: 1;
     animation-delay: -4s;
 }
 
@@ -451,7 +451,7 @@ main {
     width: 150px;
     height: 150px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/11.png') center/contain no-repeat;
-    opacity: 0.32;
+    opacity: 1;
     animation-delay: -1s;
 }
 
@@ -463,7 +463,7 @@ main {
     width: 300px;
     height: 300px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/10.png') center/contain no-repeat;
-    opacity: 0.15;
+    opacity: 1;
     animation-delay: -3s;
 }
 
@@ -474,7 +474,7 @@ main {
     width: 250px;
     height: 250px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/5.png') center/contain no-repeat;
-    opacity: 0.12;
+    opacity: 1;
     animation-delay: -4s;
 }
 
@@ -485,7 +485,7 @@ main {
     width: 200px;
     height: 200px;
     background: url('https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/3.png') center/contain no-repeat;
-    opacity: 0.15;
+    opacity: 1;
     animation-delay: -2s;
 }
 
@@ -578,7 +578,7 @@ main {
         margin-bottom: 1rem;
         margin-right: 0;
         min-width: auto;
-        position: relative;
+    position: relative;
         margin-left: -3rem;
     }
 
@@ -587,7 +587,7 @@ main {
     }
 
     .timeline-navigation {
-        flex-direction: column;
+    flex-direction: column;
         align-items: center;
     }
-}
+} 
