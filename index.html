@@ -29,9 +29,9 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#works">Works</a></li>
+                <li><a href="works.html">Works</a></li>
                 <li><a href="timeline.html">Timeline</a></li>
-                <li><a href="#books">Books</a></li>
+                <li><a href="books.html">Books</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
@@ -50,7 +50,7 @@
                             who chronicles the intersections of art, culture, and society from New York City and London.
                         </p>
                         <div class="hero-buttons">
-                            <a href="#works" class="btn btn-primary">Explore Works</a>
+                            <a href="works.html" class="btn btn-primary">Explore Works</a>
                             <a href="gallery.html" class="btn btn-secondary">View Gallery</a>
                         </div>
                     </div>
@@ -68,15 +68,17 @@
             <div class="balloon-decoration balloon-black-4"></div>
         </section>
 
-        <section class="signature-section">
+        <section class="signature-section" style="position: relative;">
             <div class="container">
                 <img src="https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/anthonysignature.png" 
                      alt="Anthony Haden-Guest Signature" 
                      class="signature">
             </div>
+            <!-- Large balloon for signature section -->
+            <div class="balloon-decoration balloon-signature-large"></div>
         </section>
 
-        <section id="about" class="section" style="padding: 6rem 0; background: var(--primary-white);">
+        <section id="about" class="section" style="padding: 6rem 0; background: var(--primary-white); position: relative;">
             <div class="container">
                 <h2 class="section-title">About</h2>
                 <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; max-width: 1000px; margin: 0 auto;">
@@ -113,8 +115,12 @@
                     </div>
                 </div>
             </div>
+            <!-- Large balloon for about section -->
+            <div class="balloon-decoration balloon-black-large"></div>
         </section>
 
+        <!-- Notable Works Section - Hidden, moved to dedicated works.html page -->
+        <!--
         <section id="works" class="section" style="padding: 6rem 0; background: var(--light-gray); position: relative;">
             <div class="container">
                 <h2 class="section-title">Notable Works</h2>
@@ -154,11 +160,13 @@
                     </div>
                 </div>
             </div>
-            <!-- More balloon decorations for works section -->
             <div class="balloon-decoration balloon-black-5"></div>
             <div class="balloon-decoration balloon-black-6"></div>
         </section>
+        -->
 
+        <!-- Published Books Section - Hidden, moved to dedicated books.html page -->
+        <!--
         <section id="books" class="section" style="padding: 6rem 0; background: var(--primary-white);">
             <div class="container">
                 <h2 class="section-title">Published Books</h2>
@@ -193,6 +201,7 @@
                 </div>
             </div>
         </section>
+        -->
 
         <section class="quote" style="padding: 4rem 0; background: var(--primary-black); color: var(--primary-white); text-align: center; position: relative;">
             <div class="container">
@@ -206,9 +215,11 @@
                 </blockquote>
             </div>
             <!-- Balloon Decorations - White lines for dark background -->
+            <div class="balloon-decoration balloon-white-large"></div>
             <div class="balloon-decoration balloon-white-1"></div>
             <div class="balloon-decoration balloon-white-2"></div>
             <div class="balloon-decoration balloon-white-3"></div>
+            <div class="balloon-decoration balloon-white-4"></div>
         </section>
 
         <!-- Charlie Rose Interview Section - Hidden for now -->
