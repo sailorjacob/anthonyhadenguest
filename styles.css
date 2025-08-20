@@ -16,6 +16,8 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal scroll */
     overflow-y: auto; /* Ensure proper vertical scrolling */
     min-height: 100vh; /* Prevent blank space issues */
+    width: 100%;
+    max-width: 100vw; /* Strict width constraint */
 }
 
 body {
@@ -26,6 +28,8 @@ body {
     font-weight: 300;
     position: relative;
     width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Navigation */
@@ -90,6 +94,9 @@ body {
 /* Main Content */
 main {
     padding-top: 80px;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .container {
@@ -103,6 +110,8 @@ main {
     padding: 4rem 0 6rem;
     background: var(--primary-white);
     position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 .hero-content {
@@ -208,6 +217,7 @@ main {
     text-align: center;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .signature {
@@ -371,13 +381,15 @@ main {
     pointer-events: none;
     z-index: 0;
     opacity: 1;
-    width: 120vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-size: contain;
     background-repeat: no-repeat;
-    /* Ensure balloons don't cause page overflow */
-    max-width: 100vw;
-    max-height: 100vh;
+    background-position: center;
+    /* Prevent overflow */
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
 }
 
 /* Small static balloon decorations */
@@ -461,9 +473,9 @@ main {
 /* Side decorations */
 .balloon-side-left {
     position: fixed;
-    left: -30px;
+    left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-60%);
     width: 150px;
     height: 150px;
     opacity: 0.04;
@@ -472,9 +484,9 @@ main {
 
 .balloon-side-right {
     position: fixed;
-    right: -30px;
+    right: 0;
     top: 30%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(60%);
     width: 130px;
     height: 130px;
     opacity: 0.05;
@@ -519,18 +531,50 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
     .nav-menu {
         display: none;
+    }
+
+    .hero {
+        padding: 2rem 0 4rem;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        max-width: 100%;
     }
 
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+
+    /* Ensure balloon decorations don't overflow on mobile */
+    .balloon-side-left,
+    .balloon-side-right {
+        display: none;
+    }
+
+    .balloon-dynamic-background {
+        width: 100%;
+        height: 80%;
+        background-size: cover;
     }
 
     .timeline-container-expanded::before {
@@ -547,7 +591,7 @@ main {
         margin-bottom: 1rem;
         margin-right: 0;
         min-width: auto;
-    position: relative;
+        position: relative;
         margin-left: -3rem;
     }
 
@@ -556,7 +600,7 @@ main {
     }
 
     .timeline-navigation {
-    flex-direction: column;
+        flex-direction: column;
         align-items: center;
     }
 } 
