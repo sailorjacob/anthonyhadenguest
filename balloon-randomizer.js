@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const blackLineBalloons = [
         'https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/1.png',
         'https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/2.png',
-        'https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/3.png',
         'https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/4.png',
         'https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/5.png',
         'https://twejikjgxkzmphocbvpt.supabase.co/storage/v1/object/public/havensvgs/balloon%20faces/7.png'
